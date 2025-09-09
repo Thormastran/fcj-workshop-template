@@ -13,13 +13,13 @@ chapter: false
 {{% /notice %}}
 
 ### Student Information:
-&emsp; **Full Name:** Nguyen Van A
+&emsp; **Full Name:** Tran Cong Tam 
 
-&emsp; **Phone Number:** 0989888999 
+&emsp; **Phone Number:** 0904942288
 
-&emsp; **Email:** Anguyenvan@gmail.com
+&emsp; **Email:** trancongtam613@gmail.com
 
-&emsp; **University:** Ho Chi Minh City University of Technology and Education
+&emsp; **University:** FPT University of Technology and Education
 
 &emsp; **Major:** Information Technology
 
