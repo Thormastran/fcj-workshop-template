@@ -12,8 +12,8 @@ pre: " <b> 1.2. </b> "
 
 ### Mục tiêu Tuần 2:
 
-* Kết nối và làm quen với các thành viên First Cloud Journey.
-* Hiểu các dịch vụ AWS cơ bản, cách sử dụng Console & CLI.
+* Hiểu một số cấu trúc AWS.
+* Làm quen với EC2.
 
 ### Nhiệm vụ thực hiện trong tuần:
 | Ngày | Nhiệm vụ                                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo                        |
