@@ -1,15 +1,9 @@
 ---
 title: "Nhật ký công việc Tuần 4"
-date: ### Thành tựu tuần 4:
-
-* Các khái niệm Hybrid DNS với Amazon Route 53 Resolver: outbound/inbound endpoints, resolver rules và private hosted zones.
-* Khả năng của Route 53: đăng ký tên miền công cộng, vùng riêng tư và các mẫu giải quyết DNS.
-* Kiến thức cơ bản về DynamoDB: mô hình dữ liệu, chế độ dung lượng, các mẫu CRUD cơ bản.
-* Công cụ và mẫu AWS: AWS Management Console, cấu hình CLI, sử dụng AWS SDK, CloudFormation, Quick Starts và AWS Directory Service.
-* Kiến thức cơ bản về ElastiCache (Redis) và các trường hợp sử dụng phổ biến.Date()`"
+date: "`r Sys.Date()`"
 weight: 1
 chapter: false
-pre: " <b> 1.4. </b> "
+pre: " <b> 1.3. </b> "
 ---
 {{% notice warning %}} 
 ⚠️ **Lưu ý:** Thông tin dưới đây chỉ mang tính chất tham khảo. Vui lòng **không sao chép nguyên văn** cho báo cáo của bạn, bao gồm cả cảnh báo này.
