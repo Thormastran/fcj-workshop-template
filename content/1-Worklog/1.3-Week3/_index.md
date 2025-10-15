@@ -18,8 +18,8 @@ pre: " <b> 1.3. </b> "
 ### Tasks to be carried out this week:
 | Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Review week 2 <br> - Monitor with Amazon Cloudwatch                                                                                                   | 09/15/2025 | 09/15/2025    |
-| 3   | - Get started with AWS cloud 9                                         | 08/12/2025 | 08/12/2025      | <https://000049.awsstudygroup.com> |
+| 2   | - Review week 2 <br> - Monitor with Amazon Cloudwatch                                                                                                   | 09/14/2025 | 09/14/2025    |
+| 3   | - Get started with AWS cloud 9                                         | 09/15/2025 | 09/15/2025     | <https://000049.awsstudygroup.com> |
 | 4   | - Using command line  <br> - Working with text files <br> - Back to Dashboard interface<br> - Using AWS CLI | 09/16/2025| 09/16/2025     | <https://000049.awsstudygroup.com/4-cleanup/> |
 | 5   | - AMAZON LIGHTSAIL WORKSHOP and COST OPTIMIZATION ON AWS <br> + Deploy a Database on Lightsail<br> + Deploying a wordpress istance  <br> + Deploying prestashop e-commerce instance <br> + Deploying an AKAUNTING instance<br>                         | 09/17/2025| 09/17/2025   | <https://000045.awsstudygroup.com/1-database/> |
 | 6   | - **Practice:** <br> Application security <br>&emsp; + create snapshot <br>&emsp; + create a alarm                                                                                 | 09/18/2025 | 09/18/2025    | <https://000045.awsstudygroup.com/5-secure-the-applications/> |

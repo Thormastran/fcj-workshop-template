@@ -12,46 +12,47 @@ pre: " <b> 1.5. </b> "
 
 ### Week 5 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
-
+* Getting started with AWS lambda functions
+* Amazon DynamoDB for data persistence
 ### Tasks to be carried out this week:
 | Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - AWS offers a comprehensive suite of serverless services, including: 
+ <br>&emsp; + Compute: AWS Lambda
+ <br>&emsp; + Databases: Amazon Aurora Serverless v2, Amazon DynamoDB, Amazon Redshift Serverless
+ <br>&emsp; + Analytics: Amazon Athena, Amazon Kinesis Data Analytics
+
+ <br>&emsp; + Application Integration: Amazon EventBridge, Amazon SQS, Amazon SNS
+ <br>                                                                                                   | 09/29/2025 | 09/29/2025      |<https://000078.awsstudygroup.com/1-introduce/>|
+| 3   | - Implement serverless image resizing using AWS Lambda <br>&emsp; + Compute                                               | 09/30/2025 | 09/30/2025      | [<https://cloudjourney.awsstudygroup.com/>](https://000078.awsstudygroup.com/2-resize-image-function/) |
+| 4   | - Writing Data to Amazon DynamoDB  <br>&emsp; + An AWS account with appropriate permissions
+<br>&emsp; + Basic understanding of Python programming
+<br>&emsp; + Familiarity with AWS Lambda concepts
+<br>&emsp; + Basic knowledge of NoSQL databases| 10/01/2025 | 10/01/2025      | <https://000078.awsstudygroup.com/3-write-data-to-dynaomodb/> |
+| 5   | - Authentication with Amazon Cognito <br>&emsp; + Create User Pool
+<br>&emsp; + Create API and Lambda a                         | 10/02/2025 | 10/02/2025      | <https://000081.awsstudygroup.com/1-preparation/> |
+| 6   | - Using AWS IAM Identity Center for Robust Identity Management                                                                                | 10/03/2025 | 10/0//2025      | <https://000012.awsstudygroup.com/> |
 
 
 ### Week 5 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Explored AWS's comprehensive suite of serverless services, including:
 
-* Successfully created and configured an AWS Free Tier account.
+* Compute: AWS Lambda
+* Databases: Amazon Aurora Serverless v2, Amazon DynamoDB, Amazon Redshift Serverless
+* Analytics: Amazon Athena, Amazon Kinesis Data Analytics
+* Application Integration: Amazon EventBridge, Amazon SQS, Amazon SNS
+* Implemented a serverless image resizing solution using AWS Lambda.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Learned how to write data to Amazon DynamoDB, gaining hands-on experience with:
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* - AWS account permissions
+* - Python programming basics
+* - AWS Lambda concepts
+* - NoSQL database fundamentals
+* Practiced authentication with Amazon Cognito by:
 
-* Used AWS CLI to perform basic operations such as:
+* Creating a User Pool
+* Setting up an API and Lambda function
+*  Enhanced understanding of identity management by using AWS IAM Identity Center for robust identity and access control.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
