@@ -12,46 +12,32 @@ pre: " <b> 1.9. </b> "
 
 ### Week 9 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* VPC Components Deep Dive
+* AWS Networking and Content Delivery
 
 ### Tasks to be carried out this week:
 | Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Transit Gateway and Site-to-Site <br> - Datacenter Router and Transit Gateway Deployment VPNs                                                                                                 | 11/03/2025 | 11/03/2025      |<https://000092.awsstudygroup.com/4-transitgatewayandvpn/>|
+| 3   | - Route53 DNS Endpoints and Internal Hosted Zones <br>&emsp; + DNS Components Deployment <br>&emsp; + DNS Testing                                            | 11/04/2025 | 11/04/2025     | <https://000092.awsstudygroup.com/5-route53/5.2-dnstesting/> |
+| 4   | - VPC Endpoints for AWS Services <br> - **Practice:** <br>&emsp; + VPC Endpoints - Deployment <br>&emsp; + NP2 Endpoint Testing <br> &emsp; + VPC Endpoint Services| 11/05/2025  | 11/05/2025      | <https://000092.awsstudygroup.com/7-vpcendpointonpremise/> |
+| 5   | - VPC Endpoint Services - Deployment                         | 11/06/2025 | 11/06/2025      | <https://000092.awsstudygroup.com/7-vpcendpointonpremise/7.1-vpcendpointservicesdeployment/> |
+| 6   | - VPC Peering <br> - **Practice:** <br>&emsp; + VPC Peering Request<br>&emsp; + Routing Configuration <br> &emsp; + Final Testing               | 11/07/2025  | 11/07/2025     | <https://000092.awsstudygroup.com/8-vpcpeering/8.2-routeconf/> |
 
 
 ### Week 9 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Mastered AWS Transit Gateway and Site-to-Site VPN connectivity:
+  * Deployed and configured Transit Gateway for multi-VPC connectivity.
+  * Set up Site-to-Site VPN connections between datacenter router and AWS.
+  * Configured routing tables and tested connectivity across hybrid network architecture.
 
-* Successfully created and configured an AWS Free Tier account.
+* Implemented Route53 DNS solutions for internal networking:
+  * Deployed DNS components including Route53 resolver endpoints.
+  * Created and configured internal hosted zones for private domain resolution.
+  * Conducted comprehensive DNS testing to validate resolution across VPCs and on-premises.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Configured VPC Endpoints for secure AWS service access:
+  * Deployed VPC endpoints to access AWS services without internet gateway.
+  * Tested endpoint connectivity and validated secure communication paths.
+  * Implemented VPC endpoint services for custom application access.

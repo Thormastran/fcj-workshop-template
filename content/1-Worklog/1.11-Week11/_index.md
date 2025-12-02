@@ -12,46 +12,37 @@ pre: " <b> 1.11. </b> "
 
 ### Week 11 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* AWS Elastic Disaster Recovery Workshop
+* Database
 
 ### Tasks to be carried out this week:
 | Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Implement AutoScaling for WordPress Instance                                                                                                | 11/17/2025 | 11/17/2025      |<https://000101.awsstudygroup.com/4-asgforec2/>|
+| 3   | - Initialize AMI from WebServer Instance <br>&emsp; + Launch Template <br>&emsp; + Create Load Balancer <br>&emsp; + Create Auto Scaling Group <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 11/18/2025 | 11/18/2025     | <https://000101.awsstudygroup.com/4-asgforec2/4.5-createasg/> |
+| 4   | - Backup and Restore Database <br> - **Practice:** <br>&emsp; + Create DB Snapshot <br>&emsp; + Restore with DB Snapshot | 11/19/2025| 11/19/2025     | <https://000101.awsstudygroup.com/5-backupandrestore/5.2-restorewithsnapshot/> |
+| 5   | - Create CloudFront for Web Server                  | 11/20/2025 | 11/20/2025      | <https://000101.awsstudygroup.com/6-createcloudfront/> |
+| 6   | - Introduction to Infrastructure as Code                                                                          | 11/21/2025 | 11/21/2025     | <https://000102.awsstudygroup.com/2-pre/> |
 
 
 ### Week 11 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Implemented Auto Scaling for WordPress instances to handle traffic fluctuations:
+  * Configured Auto Scaling policies based on CPU utilization and other metrics.
+  * Set up scaling triggers and thresholds for automatic instance provisioning.
+  * Tested scaling behavior under various load conditions.
 
-* Successfully created and configured an AWS Free Tier account.
+* Created scalable web infrastructure with AMI and Load Balancer:
+  * Generated custom AMI from configured web server instance.
+  * Designed and implemented Launch Template with proper instance configurations.
+  * Deployed Application Load Balancer for traffic distribution across instances.
+  * Successfully created and configured Auto Scaling Group for high availability.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Mastered database backup and disaster recovery procedures:
+  * Created automated and manual database snapshots for point-in-time recovery.
+  * Practiced database restoration from snapshots with minimal downtime.
+  * Implemented backup retention policies and cross-region backup strategies.
+  * Validated data integrity and consistency after restoration processes.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
 
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Overall: Completed comprehensive disaster recovery and scalability workshop covering auto scaling, database backup/restore, content delivery acceleration, and infrastructure automation foundations.

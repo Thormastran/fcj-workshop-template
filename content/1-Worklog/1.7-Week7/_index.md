@@ -12,17 +12,17 @@ pre: " <b> 1.7. </b> "
 
 ### Week 7 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
+* Serverless - CI/CD with AWS CodePipeline
 * Understand basic AWS services, how to use the console & CLI.
 
 ### Tasks to be carried out this week:
 | Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Build SAM pipeline <br> - Create Git repository<br> - Create SAM pipeline                                                                   | 10/13/2025| 10/13/2025      |<https://000084.awsstudygroup.com/2-build-sam-pipeline/>|
+| 3   | - Build pipeline for front-end                                             | 10/14/2025 | 10/14/2025     | <https://000084.awsstudygroup.com/3-build-frontend-pipeline/> |
+| 4   | - Serverless <br> - introduction to AWS APPSYNC <br>  | 10/15/2025 | 10/15/2025    | <https://000086.awsstudygroup.com/2-tutorial-dynamodb-resolvers/> |
+| 5   | - DYNAMODB resolvers <br> - **Practice:** <br>&emsp; + Preparation <br>&emsp; + Writing data <br>&emsp; + Reading data <br>&emsp; + Updating data <br>&emsp; + Deleting data <br>&emsp; + Scanning table <br>&emsp; + Querying table                   | 10/16/2025 | 10/16/2025      | <https://000086.awsstudygroup.com/2-tutorial-dynamodb-resolvers/> |
+| 6   | - Create complex object <br> - Clean up                                                                                | 10/17/2025| 10/17/2025     | <https://000086.awsstudygroup.com/4-clean-up/> |
 
 
 ### Week 7 Achievements:

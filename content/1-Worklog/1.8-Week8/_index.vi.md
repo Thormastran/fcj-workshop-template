@@ -1,59 +1,42 @@
 ---
-title: "Worklog Tuần 8"
+title: "Nhật ký Tuần 8"
 date: "`r Sys.Date()`"
 weight: 1
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
+{{% notice warning %}} 
+⚠️ **Lưu ý:** Các thông tin dưới đây chỉ mang tính chất tham khảo. Vui lòng **không sao chép nguyên văn** cho báo cáo của bạn, bao gồm cả cảnh báo này.
 {{% /notice %}}
 
 
-### Mục tiêu tuần 8:
+### Mục tiêu Tuần 8:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* AWS TOOLKIT CHO VS CODE: AMAZON Q & CODEWHISPERER
+* AWS NETWORKING VÀ CONTENT DELIVERY  
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Các công việc cần thực hiện trong tuần:
+| Ngày | Công việc                                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo                        |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
+| 2   | - Làm quen với sức mạnh của Amazon CodeWhisperer <br> - Đọc và ghi chú các quy định, quy tắc của đơn vị thực tập                                                                                                   | 10/20/2025 | 10/20/2025      |
+| 3   | - TỰ ĐỘNG LƯU TRỮ AMAZON EBS SNAPSHOTS VỚI AMAZON DATA LIFECYCLE MANAGER                                           | 10/21/2025 | 10/21/2025      | <https://000088.awsstudygroup.com/3-connecting-to-aws/> |
+| 4   | - Amazon Macie <br> - Chúng ta sẽ tạo S3 bucket và kích hoạt Macie. <br> - **Thực hành:** <br>&emsp; + Tạo S3 bucket <br>&emsp; + Bật Macie| 10/22/2025 | 10/22/2025      |<https://000090.awsstudygroup.com/1-introduce/> |
+| 5   | - CHẠY MACIE JOB VÀ FINDINGS <br>&emsp; + TẠO CUSTOM DATA IDENTIFIERS                         | 10/23/2025 | 10/23/2025      | <https://000090.awsstudygroup.com/3-macie/> |
+| 6   | - AWS NETWORKING VÀ CONTENT DELIVERY                                                                                    | 10/24/2025 | 10/24/2025      |<https://000092.awsstudygroup.com> |
 
 
-### Kết quả đạt được tuần 8:
+### Kết quả đạt được Tuần 8:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Khám phá AWS Toolkit cho VS Code và Amazon CodeWhisperer:
+  * Cài đặt và kiểm tra các gợi ý code của CodeWhisperer trong VS Code.
+  * Xác thực các đề xuất mẫu và học cách chấp nhận, chỉnh sửa và áp dụng gợi ý để tăng tốc phát triển.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Tự động hóa quản lý vòng đời snapshot EBS với Amazon Data Lifecycle Manager:
+  * Tạo và áp dụng chính sách vòng đời để tự động lưu trữ EBS snapshots.
+  * Xác minh việc tạo snapshot và cài đặt lưu giữ trong console.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+* Triển khai Amazon Macie để khám phá và bảo vệ dữ liệu S3:
+  * Tạo S3 bucket và bật Macie cho bucket.
+  * Chạy công việc Macie và xem xét kết quả; tạo custom data identifiers để giảm báo động sai.
 
 

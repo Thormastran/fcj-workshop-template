@@ -12,46 +12,25 @@ pre: " <b> 1.6. </b> "
 
 ### Week 6 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Serverless - Setting up SSL for your serverless app
+* AWS Certificate Manager,Amazon Route 53,Amazon CloudFront
 
 ### Tasks to be carried out this week:
 | Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Create Domain , Hosted zone and Request SSL certificate                                                                                                 | 10/06/2025 | 10/06/2025     |<https://000082.awsstudygroup.com/2-create-domain-hosted-zone/>|
+| 3   | - Create CloudFront distribution and clean up| 10/07/2025  | 10/07/2025     | <https://000082.awsstudygroup.com/4-create-cloud-front/> |
+| 4   | - Serverless - Processing orders with SQS and SNS | 10/08/2025 | 10/08/2025     | <https://000083.awsstudygroup.com/> |
+| 5   | - Create API and Lambda functionCreate API and Lambda function<br>- **Practice:** <br>+Create OrdersTable DynamoDB table<br>+Create checkout_order Lambda function<br>+Create order_management Lambda function<br>+Create handle_order Lambda function<br>| 10/09/2025 | 10/09/2025     | <https://000083.awsstudygroup.com/3-create-api-lambda-function/> |
+| 6   | - Test web operation and Clean up                                                                                | 10/10/2025 | 10/10/2025      | <https://000083.awsstudygroup.com/4-test-operation/> |
 
 
 ### Week 6 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+- Created domain and hosted zone, requested and validated an SSL/TLS certificate using AWS Certificate Manager.
+- Provisioned an Amazon CloudFront distribution and performed cleanup steps to reduce cost/resources.
+- Implemented serverless order-processing patterns using Amazon SQS and Amazon SNS for decoupled messaging and event notification.
+- Built and deployed REST API endpoints backed by AWS Lambda functions:
+- Created an OrdersTable in Amazon DynamoDB for order persistence.
+- Implemented Lambda functions for checkout (checkout_order), order management (order_management), and order handling (handle_order).
+- Tested end-to-end web operations and performed cleanup of temporary/test resources.

@@ -16,44 +16,35 @@ pre: " <b> 1.5. </b> "
 * Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Thứ | Công việc                                                                                                                                                                                                 | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                                                                 |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ------------------------------------------------------------------------------- |
+| 2   | - AWS cung cấp một bộ dịch vụ serverless toàn diện, bao gồm: <br>&emsp; + Compute: AWS Lambda<br>&emsp; + Cơ sở dữ liệu: Amazon Aurora Serverless v2, Amazon DynamoDB, Amazon Redshift Serverless<br>&emsp; + Phân tích: Amazon Athena, Amazon Kinesis Data Analytics<br>&emsp; + Tích hợp ứng dụng: Amazon EventBridge, Amazon SQS, Amazon SNS | 09/29/2025   | 09/29/2025      | <https://000078.awsstudygroup.com/1-introduce/>                                   |
+| 3   | - Triển khai chức năng thay đổi kích thước ảnh serverless bằng AWS Lambda                                                                                                                               | 09/30/2025   | 09/30/2025      | [<https://cloudjourney.awsstudygroup.com/>](https://000078.awsstudygroup.com/2-resize-image-function/) |
+| 4   | - Ghi dữ liệu vào Amazon DynamoDB  <br>&emsp; + Yêu cầu: Tài khoản AWS với quyền phù hợp<br>&emsp; + Hiểu biết cơ bản về lập trình Python<br>&emsp; + Hiểu biết về AWS Lambda<br>&emsp; + Kiến thức cơ bản về cơ sở dữ liệu NoSQL | 10/01/2025   | 10/01/2025      | <https://000078.awsstudygroup.com/3-write-data-to-dynaomodb/>                      |
+| 5   | - Xác thực với Amazon Cognito <br>&emsp; + Tạo User Pool<br>&emsp; + Tạo API và hàm Lambda                                                                                                               | 10/02/2025   | 10/02/2025      | <https://000081.awsstudygroup.com/1-preparation/>                                 |
+| 6   | - Sử dụng AWS IAM Identity Center để quản lý danh tính một cách mạnh mẽ                                                                                                                               | 10/03/2025   | 10/03/2025      | <https://000012.awsstudygroup.com/>                                               |
 
 
 ### Kết quả đạt được tuần 5:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+- Đã khám phá bộ dịch vụ serverless toàn diện của AWS, bao gồm:
+  - Compute: AWS Lambda
+  - Cơ sở dữ liệu: Amazon Aurora Serverless v2, Amazon DynamoDB, Amazon Redshift Serverless
+  - Phân tích: Amazon Athena, Amazon Kinesis Data Analytics
+  - Tích hợp ứng dụng: Amazon EventBridge, Amazon SQS, Amazon SNS
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+- Đã triển khai giải pháp thay đổi kích thước ảnh theo mô hình serverless bằng AWS Lambda.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+- Học và thực hành cách ghi dữ liệu vào Amazon DynamoDB, thu được kinh nghiệm thực tế về:
+  - Cấp quyền và cấu hình tài khoản AWS
+  - Kiến thức cơ bản về lập trình Python
+  - Khái niệm và cách làm việc với AWS Lambda
+  - Kiến thức cơ bản về cơ sở dữ liệu NoSQL
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+- Thực hành xác thực với Amazon Cognito bằng cách:
+  - Tạo một User Pool
+  - Thiết lập API và hàm Lambda liên quan
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+- Nâng cao hiểu biết về quản lý danh tính bằng cách sử dụng AWS IAM Identity Center để kiểm soát danh tính và quyền truy cập một cách mạnh mẽ.
 
 

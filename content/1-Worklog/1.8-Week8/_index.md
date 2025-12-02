@@ -12,46 +12,31 @@ pre: " <b> 1.8. </b> "
 
 ### Week 8 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* AWS TOOLKIT FOR VS CODE: AMAZON Q & CODEWHISPERER
+* AWS NETWORKING AND CONTENT DELIVERY  
 
 ### Tasks to be carried out this week:
 | Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Get acquainted with The Power of Amazon CodeWhisperer <br> - Read and take note of internship unit rules and regulations                                                                                                   | 10/20/2025 | 10/20/2025      |
+| 3   | - AUTOMATICALLY ARCHIVE AMAZON EBS SNAPSHOTS WITH AMAZON DATA LIFECYCLE MANAGER                                           | 10/21/2025 | 10/21/2025      | <https://000088.awsstudygroup.com/3-connecting-to-aws/> |
+| 4   | - Amazon Macie <br> - We will create the S3 bucket and activate the Macie. <br> - **Practice:** <br>&emsp; + Create S3 bucket <br>&emsp; + Enable Macie| 10/22/2025 | 10/22/2025      |<https://000090.awsstudygroup.com/1-introduce/> |
+| 5   | - MACIE JOB RUN AND FINDINGS <br>&emsp; + CREATE CUSTOM DATA IDENTIFIERS                         | 10/23/2025 | 10/23/2025      | <https://000090.awsstudygroup.com/3-macie/> |
+| 6   | - AWS NETWORKING AND CONTENT DELIVERY                                                                                    | 10/24/2025 | 10/24/2025      |<https://000092.awsstudygroup.com> |
 
 
 ### Week 8 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Explored AWS Toolkit for VS Code and Amazon CodeWhisperer:
+  * Installed and tested CodeWhisperer code suggestions inside VS Code.
+  * Validated sample completions and learned how to accept, modify, and apply suggestions to speed up development.
 
-* Successfully created and configured an AWS Free Tier account.
+* Automated EBS snapshot lifecycle management with Amazon Data Lifecycle Manager:
+  * Created and applied a lifecycle policy to automatically archive EBS snapshots.
+  * Verified snapshot creation and retention settings in the console.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Implemented Amazon Macie for S3 data discovery and protection:
+  * Created an S3 bucket and enabled Macie for the bucket.
+  * Ran Macie job(s) and reviewed findings; created custom data identifiers to reduce false positives.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
 
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
