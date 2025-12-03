@@ -63,7 +63,7 @@ At Devcom 2024, AWS for Games is highlighting five new ebooks for game developer
 
 <div class="book-section" style="display: flex; align-items: flex-start; margin: 40px 0; padding: 20px; background: #f8f9fa; border-radius: 12px; gap: 25px;">
   <div style="flex: 0 0 180px;">
-    <img src="../../static/images/3-BlogsTranslated/image1.png" alt="AWS Guide to Generative AI for Game Developers" style="width: 100%; max-width: 180px; height: auto; border-radius: 8px; box-shadow: 0 6px 12px rgba(0,0,0,0.15); border: 1px solid #e1e5e9;">
+    <img src="/images/3-BlogsTranslated/image1.png" alt="AWS Guide to Generative AI for Game Developers" style="width: 100%; max-width: 180px; height: auto; border-radius: 8px; box-shadow: 0 6px 12px rgba(0,0,0,0.15); border: 1px solid #e1e5e9;">
   </div>
   <div style="flex: 1; padding-left: 10px;">
     <h3 style="margin-top: 0; margin-bottom: 15px; color: #232f3e; font-size: 1.4em; font-weight: 600;">
@@ -75,7 +75,7 @@ At Devcom 2024, AWS for Games is highlighting five new ebooks for game developer
 
 <div class="book-section" style="display: flex; align-items: flex-start; margin: 40px 0; padding: 20px; background: #f8f9fa; border-radius: 12px; gap: 25px;">
   <div style="flex: 0 0 180px;">
-    <img src="../../static/images/3-BlogsTranslated/image2.png" alt="Deliver Superior Gaming Experiences" style="width: 100%; max-width: 180px; height: auto; border-radius: 8px; box-shadow: 0 6px 12px rgba(0,0,0,0.15); border: 1px solid #e1e5e9;">
+    <img src="/images/3-BlogsTranslated/image2.png" alt="Deliver Superior Gaming Experiences" style="width: 100%; max-width: 180px; height: auto; border-radius: 8px; box-shadow: 0 6px 12px rgba(0,0,0,0.15); border: 1px solid #e1e5e9;">
   </div>
   <div style="flex: 1; padding-left: 10px;">
     <h3 style="margin-top: 0; margin-bottom: 15px; color: #232f3e; font-size: 1.4em; font-weight: 600;">
@@ -87,7 +87,7 @@ At Devcom 2024, AWS for Games is highlighting five new ebooks for game developer
 
 <div class="book-section" style="display: flex; align-items: flex-start; margin: 40px 0; padding: 20px; background: #f8f9fa; border-radius: 12px; gap: 25px;">
   <div style="flex: 0 0 180px;">
-    <img src="../../static/images/3-BlogsTranslated/image3.png" alt="Advanced Game Analytics with AWS" style="width: 100%; max-width: 180px; height: auto; border-radius: 8px; box-shadow: 0 6px 12px rgba(0,0,0,0.15); border: 1px solid #e1e5e9;">
+    <img src="/images/3-BlogsTranslated/image3.png" alt="Advanced Game Analytics with AWS" style="width: 100%; max-width: 180px; height: auto; border-radius: 8px; box-shadow: 0 6px 12px rgba(0,0,0,0.15); border: 1px solid #e1e5e9;">
   </div>
   <div style="flex: 1; padding-left: 10px;">
     <h3 style="margin-top: 0; margin-bottom: 15px; color: #232f3e; font-size: 1.4em; font-weight: 600;">
