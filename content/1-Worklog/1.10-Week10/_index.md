@@ -13,7 +13,7 @@ pre: " <b> 1.10. </b> "
 ### Week 10 Objectives:
 
 * AWS WorkSpaces
-* CloudFront with S3 Bucket 
+* CloudFront with S3 Bucket , CLoud trail
 
 ### Tasks to be carried out this week:
 | Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
