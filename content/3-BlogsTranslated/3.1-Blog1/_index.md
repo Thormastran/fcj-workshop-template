@@ -29,7 +29,7 @@ A second demo dives deep into using Stable Diffusion within Amazon Bedrock to ge
 
 Panels and talks
 
-AWS for Games leaders and partners will participate in a range of Devcom sessions, including:
+## AWS for Games leaders and partners will participate in a range of Devcom sessions, including:
 
 Monday, August 19
 
@@ -59,144 +59,62 @@ Visit with Deconstructor of Fun, AppsFlyer, Heroic Labs, and other game developm
 
 At Devcom 2024, AWS for Games is highlighting five new ebooks for game developers that touch on everything from generative AI to delivering outstanding gamer experiences. They also illustrate how to maximize the use of Amazon GameLift and game servers and reimagine game development with the cloud, as well as the anatomy of LiveOps games. See the following for more details:
 
----
-
-<div class="book-section" style="display: flex; align-items: flex-start; margin: 40px 0; padding: 20px; background: #f8f9fa; border-radius: 12px; gap: 25px;">
-  <div style="flex: 0 0 180px;">
-    <img src="/images/3-BlogsTranslated/image1.png" alt="AWS Guide to Generative AI for Game Developers" style="width: 100%; max-width: 180px; height: auto; border-radius: 8px; box-shadow: 0 6px 12px rgba(0,0,0,0.15); border: 1px solid #e1e5e9;">
-  </div>
-  <div style="flex: 1; padding-left: 10px;">
-    <h3 style="margin-top: 0; margin-bottom: 15px; color: #232f3e; font-size: 1.4em; font-weight: 600;">
-      <a href="#" style="color: #0073bb; text-decoration: none;">The 2024 AWS guide to generative AI for game developers</a>
-    </h3>
-    <p style="margin: 0; line-height: 1.6; color: #545b64; font-size: 1em;">is designed to help studios better understand and unlock the advantages of generative AI applications across three key areas, discover thought starters for role-relevant use cases, and much more.</p>
+<div style="display: flex; align-items: flex-start; margin: 30px 0; gap: 20px;">
+  <img src="/images/3-BlogsTranslated/image.png" alt="AWS Guide to Generative AI for Game Developers" style="width: 150px; height: auto;">
+  <div>
+    <p><a href="https://pages.awscloud.com/global-ln-gc-a4gmt-genai-game-dev-learn.html" style="color: #0073bb; text-decoration: none; font-weight: 500;">The 2024 AWS guide to generative AI for game developers</a> is designed to help studios better understand and unlock the advantages of generative AI applications across three key areas, discover thought starters for role-relevant use cases, and much more.</p>
   </div>
 </div>
 
-<div class="book-section" style="display: flex; align-items: flex-start; margin: 40px 0; padding: 20px; background: #f8f9fa; border-radius: 12px; gap: 25px;">
-  <div style="flex: 0 0 180px;">
-    <img src="/images/3-BlogsTranslated/image2.png" alt="Deliver Superior Gaming Experiences" style="width: 100%; max-width: 180px; height: auto; border-radius: 8px; box-shadow: 0 6px 12px rgba(0,0,0,0.15); border: 1px solid #e1e5e9;">
-  </div>
-  <div style="flex: 1; padding-left: 10px;">
-    <h3 style="margin-top: 0; margin-bottom: 15px; color: #232f3e; font-size: 1.4em; font-weight: 600;">
-      <a href="#" style="color: #0073bb; text-decoration: none;">Deliver superior gaming experiences</a>
-    </h3>
-    <p style="margin: 0; line-height: 1.6; color: #545b64; font-size: 1em;">guides developers on using AWS purpose-built services and solutions to empower development teams, spur innovation, and build immersive worlds that give gamers the experiences they deserve.</p>
+<div style="display: flex; align-items: flex-start; margin: 30px 0; gap: 20px;">
+  <img src="/images/3-BlogsTranslated/image1.png" alt="Deliver Superior Gaming Experiences" style="width: 150px; height: auto;">
+  <div>
+    <p><a href="https://pages.awscloud.com/global-ln-gc-a4gmt-deliv-game-exp-learn.html" style="color: #0073bb; text-decoration: none; font-weight: 500;">Deliver superior gaming experiences</a> guides developers on using AWS purpose-built services and solutions to empower development teams, spur innovation, and build immersive worlds that give gamers the experiences they deserve.</p>
   </div>
 </div>
 
-<div class="book-section" style="display: flex; align-items: flex-start; margin: 40px 0; padding: 20px; background: #f8f9fa; border-radius: 12px; gap: 25px;">
-  <div style="flex: 0 0 180px;">
-    <img src="/images/3-BlogsTranslated/image3.png" alt="Advanced Game Analytics with AWS" style="width: 100%; max-width: 180px; height: auto; border-radius: 8px; box-shadow: 0 6px 12px rgba(0,0,0,0.15); border: 1px solid #e1e5e9;">
-  </div>
-  <div style="flex: 1; padding-left: 10px;">
-    <h3 style="margin-top: 0; margin-bottom: 15px; color: #232f3e; font-size: 1.4em; font-weight: 600;">
-      <a href="#" style="color: #0073bb; text-decoration: none;">Advanced Game Analytics with AWS</a>
-    </h3>
-    <p style="margin: 0; line-height: 1.6; color: #545b64; font-size: 1em;">explores how game studios can leverage AWS analytics services to gain deeper insights into player behavior, optimize game performance, and drive data-driven decision making for enhanced gaming experiences.</p>
+<div style="display: flex; align-items: flex-start; margin: 30px 0; gap: 20px;">
+  <img src="/images/3-BlogsTranslated/image2.png" alt="A guide to Amazon GameLift and game servers" style="width: 150px; height: auto;">
+  <div>
+    <p><a href="https://pages.awscloud.com/global-ln-gc-a4gmt-gamelift-server-learn.html" style="color: #0073bb; text-decoration: none; font-weight: 500;">A guide to Amazon GameLift and game servers</a> provides tips for building worlds that players don't want to leave, even during peak hours, using an AWS server hosting option that meets your unique needs, including the use of a fully managed solution with Amazon GameLift, and more.</p>
   </div>
 </div>
 
----
+<div style="display: flex; align-items: flex-start; margin: 30px 0; gap: 20px;">
+  <img src="/images/3-BlogsTranslated/image3.png" alt="Reinventing game development" style="width: 150px; height: auto;">
+  <div>
+    <p><a href="https://pages.awscloud.com/global-ln-gc-a4gmt-cloud-game-dev-learn.html" style="color: #0073bb; text-decoration: none; font-weight: 500;">Reinventing game development</a> explores the transformative potential of AWS technologies for games and the workforce behind them, providing insights into the ways Sony Entertainment, Epic Games, Ubisoft, and other studios are revolutionizing their workflows with cloud-based solutions.</p>
+  </div>
+</div>
 
-**The solution architecture is now as follows:**
+<div style="display: flex; align-items: flex-start; margin: 30px 0; gap: 20px;">
+  <img src="/images/3-BlogsTranslated/image5.jpeg" alt="Game on for LiveOps" style="width: 150px; height: auto;">
+  <div>
+    <p><a href="https://pages.awscloud.com/global-ln-gc-a4gmt-game-on-liveops-learn.html" style="color: #0073bb; text-decoration: none; font-weight: 500;">Game on for LiveOps</a> examines the anatomy of LiveOps games, offering a closer look into how AWS products, services, and capabilities help developers build with a managed backend, understand their players, and extend player lifetime value.</p>
+  </div>
+</div>
 
-> *Figure 1. Overall architecture; colored boxes represent distinct services.*
+## Innovative customer applications
 
----
+Game studios worldwide are combining advanced 3D game development technology with purpose-built global infrastructure capabilities to build, run, and grow their games. In advance of Gamescom, AWS is excited to highlight these stories, which feature:
 
-While the term *microservices* has some inherent ambiguity, certain traits are common:  
-- Small, autonomous, loosely coupled  
-- Reusable, communicating through well-defined interfaces  
-- Specialized to do one thing well  
-- Often implemented in an **event-driven architecture**
+- [Kinetix](https://aws.amazon.com/blogs/gametech/kinetix-taps-aws-to-bring-generative-ai-tools-directly-to-players/), a technology startup using AWS to bring generative AI tools directly to players
+- [Azur Games](), a mobile game publisher and developer that migrated all its game analytics data to ClickHouse Cloud on AWS
+- [Gamer Arena](https://aws.amazon.com/blogs/gametech/gamer-arena-minimizes-devops-demands-unlocks-generative-ai-potential-with-aws/), a technology startup that minimized DevOps demands and unlocked new generative AI potential leveraging AWS
+- [Omeda Studios](https://aws.amazon.com/blogs/gametech/omeda-studios-swaps-out-predecessor-backend-in-less-than-five-months-using-amazon-gamelift-and-pragma/), a game developer that swapped out the ‘Predecessor’ backend in less than five months using Amazon GameLift and Pragma
+- [Singularity 6](https://aws.amazon.com/blogs/gametech/how-singularity-6s-palia-conquered-cross-regional-gaming-with-amazon-eks-and-karpenter/), the creators of ‘Palia’ that used Amazon Elastic Kubernetes Service (Amazon EKS) and Karpenter to conquer cross-regional gaming
+- [HUDstats](https://aws.amazon.com/blogs/gametech/hudstats-switches-from-openai-to-amazon-bedrock-to-advance-esports-storytelling-using-generative-ai/), an esports data and analytics company that moved from OpenAI to Amazon Bedrock to advance esports storytelling
+- [Center for Brain Health at The University of Texas at Dallas](https://aws.amazon.com/blogs/gametech/center-for-brainhealth-teams-up-with-aws-to-grow-charisma-program-using-generative-ai-and-cloud-gaming/) and its collaboration with AWS to grow its Charisma program using generative AI and cloud gaming
+- [Supercell](https://aws.amazon.com/solutions/case-studies/supercell-aurora-case-study/), a leading mobile game company that significantly reduced downtime and provided uninterrupted player experiences using Amazon Aurora
+- [Vuvy](https://aws.amazon.com/solutions/case-studies/vuvy-case-study/), a gaming company that migrated its entire infrastructure to AWS in 45 days
+- [Freedom Games](https://aws.amazon.com/blogs/gametech/freedom-games-supports-the-indie-game-community-with-aws/), a developer of a platform for the indie game community with AWS services providing the core infrastructure
+## Omdia games industry benchmark recognition
 
-When determining where to draw boundaries between microservices, consider:  
-- **Intrinsic**: technology used, performance, reliability, scalability  
-- **Extrinsic**: dependent functionality, rate of change, reusability  
-- **Human**: team ownership, managing *cognitive load*
+In addition to all our Gamescom activities, AWS for Games is proud to share that in July, [Omdia recognized AWS](https://omdia.tech.informa.com/pr/2024/jul/omdia-research-shows-increasingly-intense-competition-among-cloud-platforms-in-the-games-industry) as a Cloud Platforms for Games Leader in its annual Omdia Market Radar report. The report explores the cloud services market in the games industry and offers game developers and publishers insights and recommendations based on its research and analysis. AWS for Games placed highest in six out of the seven capabilities evaluated. [Download and read the report.](https://pages.awscloud.com/GLOBAL-brand-awareness-content-download-24-omdia-ardm-market-radar-cloud-platforms-games-report-learn.html?trk=4a94d87e-ba31-47ea-b8ed-8d8113acf987&sc_channel=el)
 
----
+![ picture](/images/3-BlogsTranslated/devcom-image-1.png)
 
-## Technology Choices and Communication Scope
+## Conclusion
+Gamescom is one of a few opportunities each year where the global gaming and game development community get to converge, immerse themselves in the latest gaming experiences, and interact with industry game changers. We can’t wait to see what’s in store this year!
 
-| Communication scope                       | Technologies / patterns to consider                                                        |
-| ----------------------------------------- | ------------------------------------------------------------------------------------------ |
-| Within a single microservice              | Amazon Simple Queue Service (Amazon SQS), AWS Step Functions                               |
-| Between microservices in a single service | AWS CloudFormation cross-stack references, Amazon Simple Notification Service (Amazon SNS) |
-| Between services                          | Amazon EventBridge, AWS Cloud Map, Amazon API Gateway                                      |
-
----
-
-## The Pub/Sub Hub
-
-Using a **hub-and-spoke** architecture (or message broker) works well with a small number of tightly related microservices.  
-- Each microservice depends only on the *hub*  
-- Inter-microservice connections are limited to the contents of the published message  
-- Reduces the number of synchronous calls since pub/sub is a one-way asynchronous *push*
-
-Drawback: **coordination and monitoring** are needed to avoid microservices processing the wrong message.
-
----
-
-## Core Microservice
-
-Provides foundational data and communication layer, including:  
-- **Amazon S3** bucket for data  
-- **Amazon DynamoDB** for data catalog  
-- **AWS Lambda** to write messages into the data lake and catalog  
-- **Amazon SNS** topic as the *hub*  
-- **Amazon S3** bucket for artifacts such as Lambda code
-
-> Only allow indirect write access to the data lake through a Lambda function → ensures consistency.
-
----
-
-## Front Door Microservice
-
-- Provides an API Gateway for external REST interaction  
-- Authentication & authorization based on **OIDC** via **Amazon Cognito**  
-- Self-managed *deduplication* mechanism using DynamoDB instead of SNS FIFO because:  
-  1. SNS deduplication TTL is only 5 minutes  
-  2. SNS FIFO requires SQS FIFO  
-  3. Ability to proactively notify the sender that the message is a duplicate  
-
----
-
-## Staging ER7 Microservice
-
-- Lambda “trigger” subscribed to the pub/sub hub, filtering messages by attribute  
-- Step Functions Express Workflow to convert ER7 → JSON  
-- Two Lambdas:  
-  1. Fix ER7 formatting (newline, carriage return)  
-  2. Parsing logic  
-- Result or error is pushed back into the pub/sub hub  
-
----
-
-## New Features in the Solution
-
-### 1. AWS CloudFormation Cross-Stack References
-Example *outputs* in the core microservice:
-```yaml
-Outputs:
-  Bucket:
-    Value: !Ref Bucket
-    Export:
-      Name: !Sub ${AWS::StackName}-Bucket
-  ArtifactBucket:
-    Value: !Ref ArtifactBucket
-    Export:
-      Name: !Sub ${AWS::StackName}-ArtifactBucket
-  Topic:
-    Value: !Ref Topic
-    Export:
-      Name: !Sub ${AWS::StackName}-Topic
-  Catalog:
-    Value: !Ref Catalog
-    Export:
-      Name: !Sub ${AWS::StackName}-Catalog
-  CatalogArn:
-    Value: !GetAtt Catalog.Arn
-    Export:
-      Name: !Sub ${AWS::StackName}-CatalogArn
+To stay up to date with the latest Gamescom and Devcom developments from AWS, visit our [AWS for Games Devcom webpage](https://aws.amazon.com/gametech/events/gamescom2024/). Find out how game developers are transforming game workloads and experiences with AWS by [signing up to meet with one of our industry experts](https://awscustomerprograms.jifflenow.com/external-request/devcomgamescom2024/meeting-request?token=eaf56f6547b75436a208) at the show.
