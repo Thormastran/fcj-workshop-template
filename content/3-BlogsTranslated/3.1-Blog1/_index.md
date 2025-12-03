@@ -40,21 +40,54 @@ Tuesday, August 20
 Accelerating Game Development with AWS and Revolgy featuring AWS for Games Sr. Solutions Architect Chris Blackwell and Revolgy Senior Account Manager James Turner from 11:30-12:00 CET on Stage 4 – (Confex Lvl-1).
 Networking events
 
-The AWS team invites attendees to unwind after a busy day on the conference floor at one of many customer and partner events, including:
+The AWS team invites attendees to unwind after a busy day on the conference floor at one of many [customer and partner events](https://aws.amazon.com/vi/gametech/), including:
 
 Monday, August 19
 
-The fourth annual Celebrating Women in Games event, hosted by AWS, Amazon Games, and Women in Games International (WIGI) takes place on the 27th floor of Kölnsky from 18:00-21:00 CET and kicks off with a panel discussion led by WIGI CEO Joanie Kraut. After the panel, participants are invited to join a reception and networking event, followed by an after-party sponsored by DoIT. Space is limited, so be sure to reserve a spot.
-Pragma’s Backend Services House networking happy hour runs from 17:00-20:00 CET. Register on the website to see the location.
+The fourth annual Celebrating Women in Games event, hosted by AWS, Amazon Games, and Women in Games International (WIGI) takes place on the 27th floor of Kölnsky from 18:00-21:00 CET and kicks off with a panel discussion led by WIGI CEO Joanie Kraut. After the panel, participants are invited to join a reception and networking event, followed by an after-party sponsored by DoIT. Space is limited, so be sure to [reserve a spot](https://splashthat.com/#notfound).
+Pragma’s Backend Services House networking happy hour runs from 17:00-20:00 CET. [Register on the website to see the location](https://pragma.gg/events/backend-services-house-devcom-gamescom).
 Tuesday, August 20
 
-A Community Clubhouse learning and networking event will offer sessions from industry leaders and AWS speakers from 8:00-18:30 CET. Register here.
+A Community Clubhouse learning and networking event will offer sessions from industry leaders and AWS speakers from 8:00-18:30 CET. [Register here](https://www.eventbrite.de/e/community-clubhouse-at-devcom-developer-conference-2024-tickets-923738856787?aff=AWS)
 Join CleverTap Gaming and AWS for an immersive, inspiring experience with some of the brightest minds in mobile and console gaming at the Product x LiveOps Symposium, which takes place from 16:00-17:30 CET.
-From 19:00-22:00 CET, AccelByte, Unity, Edgegap, mod.io, Paddle, and AWS are hosting an exciting evening where developers can connect, enjoy food and drinks, and explore solutions. Register here.
+From 19:00-22:00 CET, AccelByte, Unity, Edgegap, mod.io, Paddle, and AWS are hosting an exciting evening where developers can connect, enjoy food and drinks, and explore solutions. [Register here](https://accelbyte.io/event/accelbyte-game-developer-mixer-at-devcom).
 Wednesday, August 21
 
-Visit with Deconstructor of Fun, AppsFlyer, Heroic Labs, and other game development professionals for an intimate whiskey, wine, or water tasting at The Grid Bar starting at 16:00 CET. Register here.
+Visit with Deconstructor of Fun, AppsFlyer, Heroic Labs, and other game development professionals for an intimate whiskey, wine, or water tasting at The Grid Bar starting at 16:00 CET. [Register here](https://event.appsflyer.com/gamescomwwwtasting/HL).
 
+New ebooks for game developers
+
+At Devcom 2024, AWS for Games is highlighting five new ebooks for game developers that touch on everything from generative AI to delivering outstanding gamer experiences. They also illustrate how to maximize the use of Amazon GameLift and game servers and reimagine game development with the cloud, as well as the anatomy of LiveOps games. See the following for more details:
+
+<div style="display: flex; align-items: flex-start; margin: 30px 0; gap: 20px; flex-wrap: wrap;">
+  <div style="flex: 0 0 200px; min-width: 200px;">
+    <img src="/images/3-BlogsTranslated/image1.png" alt="AWS Guide to Generative AI for Game Developers" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  </div>
+  <div style="flex: 1; min-width: 300px;">
+    <h4 style="margin-top: 0; color: #0073bb;">The 2024 AWS guide to generative AI for game developers</h4>
+    <p>is designed to help studios better understand and unlock the advantages of generative AI applications across three key areas, discover thought starters for role-relevant use cases, and much more.</p>
+  </div>
+</div>
+
+<div style="display: flex; align-items: flex-start; margin: 30px 0; gap: 20px; flex-wrap: wrap;">
+  <div style="flex: 0 0 200px; min-width: 200px;">
+    <img src="/images/3-BlogsTranslated/image2.png" alt="Deliver Superior Gaming Experiences" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  </div>
+  <div style="flex: 1; min-width: 300px;">
+    <h4 style="margin-top: 0; color: #0073bb;">Deliver superior gaming experiences</h4>
+    <p>guides developers on using AWS purpose-built services and solutions to empower development teams, spur innovation, and build immersive worlds that give gamers the experiences they deserve.</p>
+  </div>
+</div>
+
+<div style="display: flex; align-items: flex-start; margin: 30px 0; gap: 20px; flex-wrap: wrap;">
+  <div style="flex: 0 0 200px; min-width: 200px;">
+    <img src="/images/3-BlogsTranslated/image3.png" alt="Game Analytics Solutions" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  </div>
+  <div style="flex: 1; min-width: 300px;">
+    <h4 style="margin-top: 0; color: #0073bb;">Advanced Game Analytics with AWS</h4>
+    <p>explores how game studios can leverage AWS analytics services to gain deeper insights into player behavior, optimize game performance, and drive data-driven decision making for enhanced gaming experiences.</p>
+  </div>
+</div>
 
 **The solution architecture is now as follows:**
 
