@@ -62,28 +62,35 @@ At Devcom 2024, AWS for Games is highlighting five new ebooks for game developer
 <div style="display: flex; align-items: flex-start; margin: 40px 0; gap: 25px;">
   <img src="/images/3-BlogsTranslated/image.png" alt="AWS Guide to Generative AI for Game Developers" style="width: 150px; height: auto; flex-shrink: 0;">
   <div>
-    <p style="margin: 0; line-height: 1.5;"><a href="https://pages.awscloud.com/global-ln-gc-a4gmt-genai-game-dev-learn.html" style="color: #0073bb; text-decoration: none; font-weight: 500;">The 2024 AWS guide to generative AI for game developers</a> is designed to help studios better understand and unlock the advantages of generative AI applications across three key areas, discover thought starters for role-relevant use cases, and much more.</p>
+    <p class="mt-5" style="margin: 0; line-height: 1.5;"><a href="https://pages.awscloud.com/global-ln-gc-a4gmt-genai-game-dev-learn.html" style="color: #0073bb; text-decoration: none; font-weight: 500;">The 2024 AWS guide to generative AI for game developers</a> is designed to help studios better understand and unlock the advantages of generative AI applications across three key areas, discover thought starters for role-relevant use cases, and much more.</p>
   </div>
 </div>
 
 <div style="display: flex; align-items: flex-start; margin: 40px 0; gap: 25px;">
   <img src="/images/3-BlogsTranslated/image1.png" alt="Deliver Superior Gaming Experiences" style="width: 150px; height: auto; flex-shrink: 0;">
   <div>
-    <p style="margin: 0; line-height: 1.5;"><a href="https://pages.awscloud.com/global-ln-gc-a4gmt-deliv-game-exp-learn.html" style="color: #0073bb; text-decoration: none; font-weight: 500;">Deliver superior gaming experiences</a> guides developers on using AWS purpose-built services and solutions to empower development teams, spur innovation, and build immersive worlds that give gamers the experiences they deserve.</p>
+    <p class="mt-5"  style="margin: 0; line-height: 1.5;"><a href="https://pages.awscloud.com/global-ln-gc-a4gmt-deliv-game-exp-learn.html" style="color: #0073bb; text-decoration: none; font-weight: 500;">Deliver superior gaming experiences</a> guides developers on using AWS purpose-built services and solutions to empower development teams, spur innovation, and build immersive worlds that give gamers the experiences they deserve.</p>
   </div>
 </div>
 
 <div style="display: flex; align-items: flex-start; margin: 40px 0; gap: 25px;">
   <img src="/images/3-BlogsTranslated/image2.png" alt="A guide to Amazon GameLift and game servers" style="width: 150px; height: auto; flex-shrink: 0;">
   <div>
-    <p style="margin: 0; line-height: 1.5;"><a href="https://pages.awscloud.com/global-ln-gc-a4gmt-gamelift-server-learn.html" style="color: #0073bb; text-decoration: none; font-weight: 500;">A guide to Amazon GameLift and game servers</a> provides tips for building worlds that players don't want to leave, even during peak hours, using an AWS server hosting option that meets your unique needs, including the use of a fully managed solution with Amazon GameLift, and more.</p>
+    <p class="mt-5"  style="margin: 0; line-height: 1.5;"><a href="https://pages.awscloud.com/global-ln-gc-a4gmt-gamelift-server-learn.html" style="color: #0073bb; text-decoration: none; font-weight: 500;">A guide to Amazon GameLift and game servers</a> provides tips for building worlds that players don't want to leave, even during peak hours, using an AWS server hosting option that meets your unique needs, including the use of a fully managed solution with Amazon GameLift, and more.</p>
   </div>
 </div>
 
 <div style="display: flex; align-items: flex-start; margin: 40px 0; gap: 25px;">
   <img src="/images/3-BlogsTranslated/image3.png" alt="Reinventing game development" style="width: 150px; height: auto; flex-shrink: 0;">
   <div>
-    <p style="margin: 0; line-height: 1.5;"><a href="https://pages.awscloud.com/global-ln-gc-a4gmt-cloud-game-dev-learn.html" style="color: #0073bb; text-decoration: none; font-weight: 500;">Reinventing game development</a> explores the transformative potential of AWS technologies for games and the workforce behind them, providing insights into the ways Sony Entertainment, Epic Games, Ubisoft, and other studios are revolutionizing their workflows with cloud-based solutions.</p>
+    <p class="mt-5"  style="margin: 0; line-height: 1.5;"><a href="https://pages.awscloud.com/global-ln-gc-a4gmt-cloud-game-dev-learn.html" style="color: #0073bb; text-decoration: none; font-weight: 500;">Reinventing game development</a> explores the transformative potential of AWS technologies for games and the workforce behind them, providing insights into the ways Sony Entertainment, Epic Games, Ubisoft, and other studios are revolutionizing their workflows with cloud-based solutions.</p>
+  </div>
+</div>
+
+<div style="display: flex; align-items: flex-start; margin: 40px 0; gap: 25px;">
+  <img src="/images/3-BlogsTranslated/image5.png" alt="Reinventing game development" style="width: 150px; height: auto; flex-shrink: 0;">
+  <div>
+    <p class="mt-5" style="line-height: 1.5;"><a href="https://pages.awscloud.com/global-ln-gc-a4gmt-game-on-liveops-learn.html" style="color: #0073bb; text-decoration: none; font-weight: 500;">Game on for LiveOps</a> examines the anatomy of LiveOps games, offering a closer look into how AWS products, services, and capabilities help developers build with a managed backend, understand their players, and extend player lifetime value.</p>
   </div>
 </div>
 

@@ -9,118 +9,182 @@ pre: " <b> 3.3. </b> "
 ⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
 {{% /notice %}}
 
-# Getting Started with Healthcare Data Lakes: Using Microservices
+# Effective cost optimization strategies for Amazon Bedrock
+by Biswanath Mukherjee and Upendra V on 10 JUN 2025 in [Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/category/artificial-intelligence/amazon-machine-learning/amazon-bedrock/), [Best Practices](https://aws.amazon.com/blogs/machine-learning/category/post-types/best-practices/), [Cloud Cost Optimization](https://aws.amazon.com/blogs/machine-learning/category/business-intelligence/cloud-cost-optimization/), [Generative AI](https://aws.amazon.com/blogs/machine-learning/category/artificial-intelligence/generative-ai/), [Generative AI*](https://aws.amazon.com/blogs/machine-learning/category/artificial-intelligence/generative-ai/) Permalink  Comments  Share
+ 
+---
 
-Data lakes can help hospitals and healthcare facilities turn data into business insights, maintain business continuity, and protect patient privacy. A **data lake** is a centralized, managed, and secure repository to store all your data, both in its raw and processed forms for analysis. Data lakes allow you to break down data silos and combine different types of analytics to gain insights and make better business decisions.
+Customers are increasingly using [generative AI](https://aws.amazon.com/ai/generative-ai/) to enhance efficiency, personalize experiences, and drive innovation across various industries. For instance, generative AI can be used to perform text summarization, facilitate personalized marketing strategies, create business-critical chat-based assistants, and so on. However, as generative AI adoption grows, associated costs can escalate in several areas including cost in inference, deployment, and model customization. Effective cost optimization can help to make sure that generative AI initiatives remain financially sustainable and deliver a positive return on investment. Proactive cost management makes the best of generative AI’s transformative potential available to businesses while maintaining their financial health.
 
-This blog post is part of a larger series on getting started with setting up a healthcare data lake. In my final post of the series, *“Getting Started with Healthcare Data Lakes: Diving into Amazon Cognito”*, I focused on the specifics of using Amazon Cognito and Attribute Based Access Control (ABAC) to authenticate and authorize users in the healthcare data lake solution. In this blog, I detail how the solution evolved at a foundational level, including the design decisions I made and the additional features used. You can access the code samples for the solution in this Git repo for reference.
+[Amazon Bedrock](https://aws.amazon.com/bedrock/) is a fully managed service that offers a choice of high-performing [foundation models](https://aws.amazon.com/what-is/foundation-models/) (FMs) from leading AI companies like AI21 Labs, Anthropic, Cohere, DeepSeek, Luma, Meta, Mistral AI, Stability AI, and Amazon through a single API, along with a broad set of capabilities you need to build generative AI applications with security, privacy, and [responsible AI](https://aws.amazon.com/ai/responsible-ai/). Using Amazon Bedrock, you can experiment with and evaluate top FMs for your use case, privately customize them with your data using techniques such as fine-tuning and [Retrieval Augmented Generation (RAG)](https://aws.amazon.com/what-is/retrieval-augmented-generation/), and build agents that execute tasks using your enterprise systems and data sources.
+
+With the increasing adoption of Amazon Bedrock, optimizing costs is a must to help keep the expenses associated with deploying and running generative AI applications manageable and aligned with your organization’s budget. In this post, you’ll learn about strategic cost optimization techniques while using Amazon Bedrock.
 
 ---
 
-## Architecture Guidance
+## Understanding Amazon Bedrock pricing
+Amazon Bedrock offers a comprehensive pricing model based on actual usage of FMs and related services. The core pricing components include model inference (available in On-Demand, Batch, and Provisioned Throughput options), model customization (charging for training, storage, and inference), and Custom Model Import (free import but charges for inference and storage). Through [Amazon Bedrock Marketplace](https://aws.amazon.com/bedrock/marketplace/), you can access over 100 models with varying pricing structures for proprietary and public models. You can check out [Amazon Bedrock pricing](https://aws.amazon.com/bedrock/pricing/) for a pricing overview and more details on pricing models.
 
-The main change since the last presentation of the overall architecture is the decomposition of a single service into a set of smaller services to improve maintainability and flexibility. Integrating a large volume of diverse healthcare data often requires specialized connectors for each format; by keeping them encapsulated separately as microservices, we can add, remove, and modify each connector without affecting the others. The microservices are loosely coupled via publish/subscribe messaging centered in what I call the “pub/sub hub.”
+## Cost monitoring in Amazon Bedrock
+You can monitor the cost of your Amazon Bedrock usage using the following approaches:
 
-This solution represents what I would consider another reasonable sprint iteration from my last post. The scope is still limited to the ingestion and basic parsing of **HL7v2 messages** formatted in **Encoding Rules 7 (ER7)** through a REST interface.
+- Application inference profiles – Amazon Bedrock provides application inference profiles that you can use to apply custom [cost allocation tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html) to track, manage, and control on-demand FM costs and usage across different workloads and tenants.
+- Cost allocation tagging – You can [tag all Amazon Bedrock models](https://docs.aws.amazon.com/bedrock/latest/userguide/tagging.html), aligning usage to specific organizational taxonomies such as cost centers, business units, teams, and applications for precise expense tracking. To carry out tagging operations, you need the [Amazon Resource Name](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference-arns.html) (ARN) of the resource on which you want to carry out a tagging operation.
+- Integration with AWS cost tools – Amazon Bedrock cost monitoring integrates with [AWS Budgets](https://aws.amazon.com/aws-cost-management/aws-budgets/), [AWS Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/), [AWS Cost and Usage Reports](https://aws.amazon.com/aws-cost-management/aws-cost-and-usage-reporting/), and [AWS Cost Anomaly Detection](https://aws.amazon.com/aws-cost-management/aws-cost-anomaly-detection/), [enabling organizations to set tag-based budgets receive alerts for usage thresholds, and detect unusual spending patterns.]((https://aws.amazon.com/blogs/machine-learning/track-allocate-and-manage-your-generative-ai-cost-and-usage-with-amazon-bedrock/))
+- [Amazon CloudWatch](https://aws.amazon.com/cloudwatch/) metrics monitoring – Organizations can use [Amazon CloudWatch to monitor runtime metrics for Amazon Bedrock applications](https://docs.aws.amazon.com/bedrock/latest/userguide/monitoring.html) by inference profile, set alarms based on thresholds, and receive notifications for real-time management of resource usage and costs. You can monitor all parts of your Amazon Bedrock application using Amazon CloudWatch, which collects raw data and processes it into readable, near real-time metrics. You can graph the metrics using the [AWS Management Console](https://aws.amazon.com/console/) for CloudWatch. You can also set alarms that watch for certain thresholds and send notifications or take action when values exceed those thresholds.
+- Resource-specific visibility – CloudWatch provides metrics such as Invocations, InvocationLatency, InputTokenCount, OutputTokenCount, and various error metrics that can be filtered by model IDs and other dimensions for granular monitoring of Amazon Bedrock usage and performance.
+## Cost optimization strategies for Amazon Bedrock
+When building generative AI applications with Amazon Bedrock, implementing thoughtful cost optimization strategies can significantly reduce your expenses while maintaining application performance. In this section, you’ll find key approaches to consider in the following order:
 
-**The solution architecture is now as follows:**
+1. Select the appropriate model
+2. Determine if it needs customization
+   a. If yes, explore options in the correct order
+   b. If no, proceed to the next step
+3. Perform prompt engineering and management
+4. Design efficient agents
+5. Select the correct consumption option
+This flow is shown in the following flow diagram.
 
-> *Figure 1. Overall architecture; colored boxes represent distinct services.*
+![ picture](/images/3-BlogsTranslated/image9.png)
 
----
+## Choose an appropriate model for your use case
 
-While the term *microservices* has some inherent ambiguity, certain traits are common:  
-- Small, autonomous, loosely coupled  
-- Reusable, communicating through well-defined interfaces  
-- Specialized to do one thing well  
-- Often implemented in an **event-driven architecture**
+Amazon Bedrock provides access to a [diverse portfolio of FMs](https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html) through a single API. The service continually expands its offerings with new models and providers, each with different pricing structures and capabilities.
 
-When determining where to draw boundaries between microservices, consider:  
-- **Intrinsic**: technology used, performance, reliability, scalability  
-- **Extrinsic**: dependent functionality, rate of change, reusability  
-- **Human**: team ownership, managing *cognitive load*
+For example, consider the on-demand pricing variation among [Amazon Nova models](https://aws.amazon.com/nova/) in the US East (Ohio) [AWS Region](https://docs.aws.amazon.com/glossary/latest/reference/glos-chap.html#region). This pricing is current as of May 21, 2025. Refer to the [Amazon Bedrock pricing](https://aws.amazon.com/bedrock/pricing/) page for latest data.
 
----
+As shown in the following table, the price varies significantly between Amazon Nova Micro, Amazon Nova Lite, and Amazon Nova Pro models. For example, Amazon Nove Micro is approximately 1.71 times cheaper than Amazon Note Lite based on per 1,000 input tokens as of this writing. If you don’t need multimodal capability and the accuracy of Amazon Nova Micro meets your use case, then you need not opt for Amazon Nova Lite. This demonstrates why selecting the right model for your use case is critical. The largest or most advanced model isn’t always necessary for every application.
 
-## Technology Choices and Communication Scope
+<div style="overflow-x: auto; margin: 30px 0;">
+<table style="width: 100%; border-collapse: collapse; border: 2px solid #333; font-family: Arial, sans-serif;">
+  <thead>
+    <tr style="background-color: #333; color: white;">
+      <th style="padding: 12px 15px; text-align: left; border: 1px solid #333; font-weight: bold;">Amazon Nova models</th>
+      <th style="padding: 12px 15px; text-align: left; border: 1px solid #333; font-weight: bold;">Price per 1,000 input tokens</th>
+      <th style="padding: 12px 15px; text-align: left; border: 1px solid #333; font-weight: bold;">Price per 1,000 output tokens</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="background-color: #f9f9f9;">
+      <td style="padding: 12px 15px; border: 1px solid #ddd; font-weight: 500;">Amazon Nova Micro</td>
+      <td style="padding: 12px 15px; border: 1px solid #ddd;">$0.000035</td>
+      <td style="padding: 12px 15px; border: 1px solid #ddd;">$0.00014</td>
+    </tr>
+    <tr style="background-color: white;">
+      <td style="padding: 12px 15px; border: 1px solid #ddd; font-weight: 500;">Amazon Nova Lite</td>
+      <td style="padding: 12px 15px; border: 1px solid #ddd;">$0.00006</td>
+      <td style="padding: 12px 15px; border: 1px solid #ddd;">$0.00024</td>
+    </tr>
+    <tr style="background-color: #f9f9f9;">
+      <td style="padding: 12px 15px; border: 1px solid #ddd; font-weight: 500;">Amazon Nova Pro</td>
+      <td style="padding: 12px 15px; border: 1px solid #ddd;">$0.0008</td>
+      <td style="padding: 12px 15px; border: 1px solid #ddd;">$0.0032</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
-| Communication scope                       | Technologies / patterns to consider                                                        |
-| ----------------------------------------- | ------------------------------------------------------------------------------------------ |
-| Within a single microservice              | Amazon Simple Queue Service (Amazon SQS), AWS Step Functions                               |
-| Between microservices in a single service | AWS CloudFormation cross-stack references, Amazon Simple Notification Service (Amazon SNS) |
-| Between services                          | Amazon EventBridge, AWS Cloud Map, Amazon API Gateway                                      |
+One of the key advantages of Amazon Bedrock is its unified API, which abstracts the complexity of working with different models. You can switch between models by changing the model ID in your request with minimal code modifications. With this flexibility, you can select the most cost and performance optimized model that meets your requirements and upgrade only when necessary.
 
----
+* Best practice: Use Amazon Bedrock native features to evaluate the [performance of the foundation model](https://docs.aws.amazon.com/bedrock/latest/userguide/evaluation.html) for your use case. Begin with an automatic model evaluation job to narrow down the scope. Follow it up by using [LLM as a judge](https://docs.aws.amazon.com/bedrock/latest/userguide/evaluation-judge.html) or [human-based evaluation](https://docs.aws.amazon.com/bedrock/latest/userguide/evaluation-human.html) as required for your use case.
 
-## The Pub/Sub Hub
+## Perform model customization in the right order
+When customizing FMs in Amazon Bedrock for contextualizing responses, choosing the strategy in correct order can significantly reduce your expenses while maximizing performance. You have four primary strategies available, each with different cost implications:
 
-Using a **hub-and-spoke** architecture (or message broker) works well with a small number of tightly related microservices.  
-- Each microservice depends only on the *hub*  
-- Inter-microservice connections are limited to the contents of the published message  
-- Reduces the number of synchronous calls since pub/sub is a one-way asynchronous *push*
+1.[Prompt Engineering](https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-engineering-guidelines.html) – Start by crafting high-quality prompts that effectively condition the model to generate desired responses. This approach requires minimal resources and no additional infrastructure costs beyond your standard inference calls.
+2.[RAG – Amazon Bedrock Knowledge Bases](https://aws.amazon.com/bedrock/knowledge-bases/)  is a fully managed feature with built-in session context management and source attribution that helps you implement the entire RAG workflow from ingestion to retrieval and prompt augmentation without having to build custom integrations to data sources and manage data flows.
+3.[Fine-tuning](https://docs.aws.amazon.com/bedrock/latest/userguide/custom-model-fine-tuning.html)  – This approach involves providing labeled training data to improve model performance on specific tasks. Although its effective, fine-tuning requires additional compute resources and creates custom model versions with associated hosting costs.
+4.[Continued pre-training](https://docs.aws.amazon.com/bedrock/latest/userguide/custom-model-fine-tuning.html)  – The most resource-intensive option involves providing unlabeled data to further train an FM on domain-specific content. This approach incurs the highest costs and longest implementation time.
 
-Drawback: **coordination and monitoring** are needed to avoid microservices processing the wrong message.
+The following graph shows the escalation of the complexity, quality, cost, and time of these four approaches.
+![ picture](/images/3-BlogsTranslated/image10.png)
 
----
+Best practice: Implement these strategies progressively. Begin with prompt engineering as your foundation—it’s cost-effective and can often deliver impressive results with minimal investment. Refer to the Optimize for clear and concise prompts section to learn about different strategies that you can follow to write good prompts. Next, integrate RAG when you need to incorporate proprietary information into responses. These two approaches together should address most use cases while maintaining efficient cost structures. Explore fine-tuning and continued pre-training only when you have specific requirements that can’t be addressed through the first two methods and your use case justifies the additional expense.
 
-## Core Microservice
+By following this implementation hierarchy, shown in the following figure, you can optimize both your Amazon Bedrock performance and your budget allocation. Here is the high-level mental model for choosing different options:
 
-Provides foundational data and communication layer, including:  
-- **Amazon S3** bucket for data  
-- **Amazon DynamoDB** for data catalog  
-- **AWS Lambda** to write messages into the data lake and catalog  
-- **Amazon SNS** topic as the *hub*  
-- **Amazon S3** bucket for artifacts such as Lambda code
+![ picture](/images/3-BlogsTranslated/image10.png)
 
-> Only allow indirect write access to the data lake through a Lambda function → ensures consistency.
+## Use Amazon Bedrock native model distillation feature
+[Amazon Bedrock Model Distillation](https://aws.amazon.com/bedrock/model-distillation/) is a powerful feature that you can use to access smaller, more cost-effective models without sacrificing performance and accuracy for your specific use cases.
 
----
+-  Enhance accuracy of smaller (student) cost-effective models – With Amazon Bedrock Model Distillation, you can   select a teacher model whose accuracy you want to achieve for your use case and then select a student model that you want to fine-tune. Model distillation automates the process of generating responses from the teacher and using those 
+responses to fine-tune the student model.
+- Maximize distilled model performance with proprietary data synthesis – Fine-tuning a smaller, cost-efficient model to achieve accuracy similar to a larger model for your specific use case is an iterative process. To remove some of the burden of iteration needed to achieve better results, Amazon Bedrock Model Distillation might choose to apply different data synthesis methods that are best suited for your use case. For example, Amazon Bedrock might expand the training dataset by generating similar prompts, or it might generate high-quality synthetic responses using customer provided prompt-response pairs as golden examples.
+- Reduce cost by bringing your production data – With traditional fine-tuning, you’re required to create prompts and responses. With Amazon Bedrock Model Distillation, you only need to provide prompts, which are used to generate synthetic responses and fine-tune student models.
+Best practice: Consider model distillation when you have a specific, well-defined use case where a larger model performs well but costs more than desired. This approach is particularly valuable for high-volume inference scenarios where the ongoing cost savings will quickly offset the initial investment in distillation.
 
-## Front Door Microservice
+## Use Amazon Bedrock intelligent prompt routing
+With [Amazon Bedrock Intelligent Prompt Routing](https://aws.amazon.com/bedrock/intelligent-prompt-routing/), you can now use a combination of FMs from the same model family to help optimize for quality and cost when invoking a model. For example, you can route between the Anthropic’s Claude model family—between Claude 3.5 Sonnet and Claude 3 Haiku depending on the complexity of the prompt. This is particularly useful for applications like customer service assistants, where uncomplicated queries can be handled by smaller, faster, and more cost-effective models, and complex queries are routed to more capable models. Intelligent prompt routing can reduce costs by up to 30% without compromising on accuracy.
 
-- Provides an API Gateway for external REST interaction  
-- Authentication & authorization based on **OIDC** via **Amazon Cognito**  
-- Self-managed *deduplication* mechanism using DynamoDB instead of SNS FIFO because:  
-  1. SNS deduplication TTL is only 5 minutes  
-  2. SNS FIFO requires SQS FIFO  
-  3. Ability to proactively notify the sender that the message is a duplicate  
+Best practice: Implement [intelligent prompt routing](https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-routing.html) for applications that handle a wide range of query complexities.
 
----
+## Optimize for clear and concise prompts
+Optimizing prompts for clarity and conciseness in Amazon Bedrock focuses on structured, efficient communication with the model to minimize token usage and maximize response quality. Through techniques such as clear instructions, specific output formats, and precise role definitions, you can achieve better results while reducing costs associated with token consumption.
 
-## Staging ER7 Microservice
+ - Structured instructions – Break down [complex prompts into clear, numbered steps or bullet points.](https://docs.aws.amazon.com/bedrock/latest/userguide/design-a-prompt.html#prompt-instructions) This helps the model follow a logical sequence and improves the consistency of responses while reducing token usage.
+ - Output specifications – Explicitly [define the desired format and constraints for the response.](https://docs.aws.amazon.com/bedrock/latest/userguide/design-a-prompt.html#prompt-output-indicators) For example, specify word limits, format requirements, or use indicators like Please provide a brief summary in 2-3 sentences to control output length.
+ - Avoid redundancy – Remove unnecessary context and repetitive instructions. Keep prompts focused on essential information and requirements because superfluous content can increase costs and potentially confuse the model.
+ - Use separators – [Employ clear delimiters](https://docs.aws.amazon.com/bedrock/latest/userguide/design-a-prompt.html#prompt-separators) (such as triple quotes, dashes, or XML-style tags) to separate different parts of the prompt to help the model to distinguish between context, instructions, and examples.
+ - Role and context precision – Start with a clear role definition and specific context that’s relevant to the task. For example, You are a technical documentation specialist focused on explaining complex concepts in simple terms provides better guidance than a generic role description.
+Best practice: Amazon Bedrock offers a fully managed feature to [optimize prompts](https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-management-optimize.html) for a select model. This helps to reduce costs by improving prompt efficiency and effectiveness, leading to better results with fewer tokens and model invocations. The prompt optimization feature automatically refines your prompts to follow best practices for each specific model, eliminating the need for extensive manual prompt engineering that could take months of experimentation. Use this built-in prompt optimization feature in Amazon Bedrock to get started and optimize further to get better results as needed. Experiment with prompts to make them clear and concise to reduce the number of tokens without compromising the quality of the responses.
 
-- Lambda “trigger” subscribed to the pub/sub hub, filtering messages by attribute  
-- Step Functions Express Workflow to convert ER7 → JSON  
-- Two Lambdas:  
-  1. Fix ER7 formatting (newline, carriage return)  
-  2. Parsing logic  
-- Result or error is pushed back into the pub/sub hub  
+## Optimize cost and performance using Amazon Bedrock prompt caching
+You can use [prompt caching](https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-caching.html) with supported models on Amazon Bedrock to reduce inference response latency and input token costs. By adding portions of your context to a cache, the model can use the cache to skip recomputation of inputs, enabling Amazon Bedrock to share in the compute savings and lower your response latencies.
 
----
+ - Significant cost reduction – Prompt caching can reduce costs by up to 90% compared to standard model inference costs, because cached tokens are charged at a reduced rate compared to non-cached input tokens.
+ - Ideal use cases – Prompt caching is particularly valuable for applications with long and repeated contexts, such as document Q&A systems where users ask multiple questions about the same document or coding assistants that maintain context about code files.
+ - Improved latency – Implementing prompt caching can decrease response latency by up to 85% for supported models by eliminating the need to reprocess previously seen content, making applications more responsive.
+ - Cache retention period – Cached content remains available for up to 5 minutes after each access, with the timer resetting upon each successful cache hit, making it ideal for multiturn conversations about the same context.
+ - Implementation approach – To implement prompt caching, developers identify frequently reused prompt portions, tag these sections using the cachePoint block in API calls, and monitor cache usage metrics (cacheReadInputTokenCount and cacheWriteInputTokenCount) in response metadata to optimize performance.
+Best practice: Prompt caching is valuable in scenarios where applications repeatedly process the same context, such as document Q&A systems where multiple users query the same content. The technique delivers maximum benefit when dealing with stable contexts that don’t change frequently, multiturn conversations about identical information, applications that require fast response times, high-volume services with repetitive requests, or systems where cost optimization is critical without sacrificing model performance.
 
-## New Features in the Solution
+## Cache prompts within the client application
+Client-side prompt caching helps reduce costs by storing frequently used prompts and responses locally within your application. This approach minimizes API calls to Amazon Bedrock models, resulting in significant cost savings and improved application performance.
 
-### 1. AWS CloudFormation Cross-Stack References
-Example *outputs* in the core microservice:
-```yaml
-Outputs:
-  Bucket:
-    Value: !Ref Bucket
-    Export:
-      Name: !Sub ${AWS::StackName}-Bucket
-  ArtifactBucket:
-    Value: !Ref ArtifactBucket
-    Export:
-      Name: !Sub ${AWS::StackName}-ArtifactBucket
-  Topic:
-    Value: !Ref Topic
-    Export:
-      Name: !Sub ${AWS::StackName}-Topic
-  Catalog:
-    Value: !Ref Catalog
-    Export:
-      Name: !Sub ${AWS::StackName}-Catalog
-  CatalogArn:
-    Value: !GetAtt Catalog.Arn
-    Export:
-      Name: !Sub ${AWS::StackName}-CatalogArn
+- Local storage implementation – Implement a caching mechanism within your application to store common prompts and their corresponding responses, using techniques such as in-memory caching (Redis, Memcached) or [application-level caching](https://aws.amazon.com/caching/general-cache/) systems.
+- Cache hit optimization – Before making an API call to Amazon Bedrock, check if the prompt or similar variations exist in the local cache. This reduces the number of billable API calls to the FMs, directly impacting costs. You can check [Caching Best Practices](https://aws.amazon.com/caching/best-practices/) to learn more.
+- Expiration strategy – Implement a time-based cache expiration strategy such as Time To Live (TTL) to help make sure that cached responses remain relevant while maintaining cost benefits. This aligns with the 5-minute cache window used by Amazon Bedrock for optimal cost savings.
+- Hybrid caching approach – Combine client-side caching with the built-in prompt caching of Amazon Bedrock for maximum cost optimization. Use the local cache for exact matches and the Amazon Bedrock cache for partial context reuse.
+- Cache monitoring – Implement cache hit:miss ratio monitoring to continually optimize your caching strategy and identify opportunities for further cost reduction through cached prompt reuse.
+Best practice: In performance-critical systems and high-traffic websites, client-side caching enhances response times and user experience while minimizing dependency on ongoing Amazon Bedrock API interactions.
+
+## Build small and focused agents that interact with each other rather than a single large monolithic agent
+Creating small, specialized agents that interact with each other in Amazon Bedrock can lead to significant cost savings while improving solution quality. This approach uses the [multi-agent collaboration](https://docs.aws.amazon.com/bedrock/latest/userguide/agents-multi-agent-collaboration.html) capability of Amazon Bedrock to build more efficient and cost-effective generative AI applications.
+
+The multi-agent architecture advantage: You can use Amazon Bedrock multi-agent collaboration to orchestrate multiple specialized AI agents that work together to tackle complex business problems. By creating smaller, purpose-built agents instead of a single large one, you can:
+
+ - Optimize model selection based on specific tasks – Use more economical FMs for simpler tasks and reserve premium models for complex reasoning tasks
+ - Enable parallel processing – Multiple specialized agents can work simultaneously on different aspects of a problem, reducing overall response time
+ - Improve solution quality – Each agent focuses on its specialty, leading to more accurate and relevant responses
+Best practice: Select appropriate models for each specialized agent, matching capabilities to task requirements while optimizing for cost. Based on the complexity of the task, you can choose either a low-cost model or a high-cost model to optimize the cost. Use [AWS Lambda](https://aws.amazon.com/lambda) functions that retrieve only the essential data to reduce unnecessary cost in Lambda execution. Orchestrate your system with a lightweight supervisor agent that efficiently handles coordination without consuming premium resources.
+
+## Choose the desired throughput depending on the usage
+Amazon Bedrock offers two distinct throughput options, each designed for different usage patterns and requirements:
+
+ - On-Demand mode – Provides a pay-as-you-go approach with no upfront commitments, making it ideal for early-stage proof of concepts (POCs) on development and test environments, applications with unpredictable or seasonal or sporadic traffic with significant variation.
+   With On-Demand pricing, you’re charged based on actual usage:
+
+   - Text generation models – Pay per input token processed and output token generated
+   - Embedding models – Pay per input token processed
+   - Image generation models – Pay per image generated
+ - Provisioned Throughput mode – By using Provisioned Throughput, you can purchase dedicated model units for specific FMs to get higher level of throughput for a model at a fixed cost. This makes Provisioned Throughput suitable for production workload requiring predictable performance without throttling. If you customized a model, you must purchase Provisioned Throughput to be able to use it.
+Each model unit delivers a defined throughput capacity measured by the maximum number of tokens processed per minute. Provisioned Throughput is billed hourly with commitment options of 1-month or 6-month terms, with longer commitments offering greater discounts.
+
+Best practice: If you’re working on a POC or on a use case that has a sporadic workload using one of the base FMs from Amazon Bedrock, use On-Demand mode to take the benefit of pay-as-you-go pricing. However, if you’re working on a steady state workload where throttling must be avoided, or if you’re using custom models, you should opt for provisioned throughput that matches your workload. Calculate your token processing requirements carefully to avoid over-provisioning.
+
+## Use batch inference
+With batch mode, you can get simultaneous large-scale predictions by providing a set of prompts as a single input file and receiving responses as a single output file. The responses are processed and stored in your [Amazon Simple Storage Service (Amazon S3)](https://aws.amazon.com/s3) bucket so you can access them later. Amazon Bedrock offers select FMs from leading AI providers like Anthropic, Meta, Mistral AI, and Amazon for batch inference at a 50% lower price compared to On-Demand inference pricing. Refer to [Supported AWS Regions and models for batch inference](https://docs.aws.amazon.com/bedrock/latest/userguide/batch-inference-supported.html) for more details. This approach is ideal for non-real-time workloads where you need to process large volumes of content efficiently.
+
+Best practice: Identify workloads in your application that don’t require real-time responses and migrate them to batch processing. For example, instead of generating product descriptions on-demand when users view them, pre-generate descriptions for new products in a nightly batch job and store the results. This approach can dramatically reduce your FM costs while maintaining the same output quality.
+
+## Conclusion
+As organizations increasingly adopt Amazon Bedrock for their generative AI applications, implementing effective cost optimization strategies becomes crucial for maintaining financial efficiency. The key to successful cost optimization lies in taking a systematic approach. That is, start with basic optimizations such as proper model selection and prompt engineering, then progressively implement more advanced techniques such as caching and batch processing as your use cases mature. Regular monitoring of costs and usage patterns, combined with continuous optimization of these strategies, will help make sure that your generative AI initiatives remain both effective and economically sustainable.Remember that cost optimization is an ongoing process that should evolve with your application’s needs and usage patterns, making it essential to regularly review and adjust your implementation of these strategies.For more information about Amazon Bedrock pricing and the cost optimization strategies discussed in this post, refer to:
+
+- [Amazon Bedrock pricing](https://aws.amazon.com/bedrock/pricing/)
+- [ Amazon Bedrock Model Distillation](https://aws.amazon.com/bedrock/model-distillation/)
+- [Amazon Bedrock Intelligent Prompt Routing](https://aws.amazon.com/bedrock/intelligent-prompt-routing/)
+- [Amazon Bedrock prompt caching](https://aws.amazon.com/bedrock/prompt-caching/)
+- [Process multiple prompts with batch inference](https://docs.aws.amazon.com/bedrock/latest/userguide/batch-inference.html)
+- [Monitoring the performance of Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/monitoring.html)
+
