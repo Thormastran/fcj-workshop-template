@@ -35,11 +35,18 @@ By the end of this section, your application will support:
 - **UI Components**  
   Build simple authentication pages such as Login, Register, Profile, and Dashboard using your chosen UI library.
 
----
-You can create function and app during this app demo on this link or you can edit some function during 1. [Create Cognito Authentication Functions](5.5.1-auth-functions/) and 2. [Build Authentication UI](5.5.2-auth-ui/)
+> **Quick options**
+>
+> You can either use the live demo for a fast setup or follow the step‑by‑step guides below to edit functions and UI directly.
+>
+> - [Create Cognito Authentication Functions](5.5.1-auth-functions/)
+> - [Build Authentication UI](5.5.2-auth-ui/)
+>
+> Use the demo for a quick start; follow the guides for detailed customization and explanation.
 
 ### Content
 
 1. [Create Cognito Authentication Functions](5.5.1-auth-functions/)
 2. [Build Authentication UI](5.5.2-auth-ui/)
-3. **[Full Testing & Verification](5.6-Testing/)**
+3. **[Implement Auth Context & Protected Routes](5.5.3-protected-routes/)**
+4.**[Full Testing & Verification](5.5.4-use-project-demo)**
