@@ -36,6 +36,7 @@ By the end of this section, your application will support:
   Build simple authentication pages such as Login, Register, Profile, and Dashboard using your chosen UI library.
 
 ---
+You can create function and app during this app demo on this link or you can edit some function during 1. [Create Cognito Authentication Functions](5.5.1-auth-functions/) and 2. [Build Authentication UI](5.5.2-auth-ui/)
 
 ### Content
 
