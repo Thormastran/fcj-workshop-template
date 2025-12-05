@@ -55,7 +55,7 @@ Create a .env.local file and paste your Cognito IDs:
 NEXT_PUBLIC_COGNITO_USER_POOL_ID=us-east-1_xxxxxxxxx
 NEXT_PUBLIC_COGNITO_APP_CLIENT_ID=xxxxxxxxxxxxxxxxxxxx
 ``` 
-
+---
 
 This ensures Amplify is available across your entire application.
 

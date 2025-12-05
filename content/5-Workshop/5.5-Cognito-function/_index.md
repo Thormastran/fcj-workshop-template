@@ -42,7 +42,9 @@ By the end of this section, your application will support:
 > - [Create Cognito Authentication Functions](5.5.1-auth-functions/)
 > - [Build Authentication UI](5.5.2-auth-ui/)
 >
-> Use the demo for a quick start; follow the guides for detailed customization and explanation.
+> Use the demo for a quick start with link <https://github.com/Thormastran/my-cognito-project/>; 
+**[Implement Auth Context & Protected Routes](5.5.3-protected-routes/)**
+follow the guides for detailed customization and explanation.
 
 ### Content
 

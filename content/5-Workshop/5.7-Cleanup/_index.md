@@ -36,8 +36,10 @@ You will *never* be charged for this workshop — but it’s still best practice
 4.  Click on your User Pool → **Delete user pool** (top-right button)
 
 5.  Type delete in the confirmation box
+![hosted zone](/images/5-Workshop/5.2-Prerequisite/image3.png)
 
 6.  Click **Delete user pool**
+
 
 **Done!** Everything is permanently deleted.
 
