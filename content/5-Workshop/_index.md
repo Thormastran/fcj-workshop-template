@@ -36,17 +36,17 @@ In this hands-on workshop, you will:
    - AWS account, IAM user, AWS CLI
    - Node.js 18+, npm, VS Code
 
-3. **[Set Up AWS Cognito User Pool](5.3-AWS-Cognito/)**
+3. **[AWS Cognito Setup](5.3-AWS-Cognito/)**
    - Create User Pool with email sign-in
    - Configure password policy, optional MFA, App Client (no client secret)
    - Create Cognito Groups (admin / user)
 
-4. **[Create Next.js App & Install Amplify SDK](5.4-Next.js-setup/)**
+4. **[Next.js Project Setup & Amplify Configuration](5.4-Next.js-setup/)**
    - Scaffold Next.js 14 with App Router + TypeScript + Tailwind CSS
    - Install `aws-amplify@latest`
    - Configure environment variables and Amplify SSR mode
 
-5. **[Build Auth Functions, Context, UI & Protected Routes](5.5-Cognito-function/)**
+5. **[Authentication Functions, UI, and Protected Routes](5.5-Cognito-function/)**
    - Complete Cognito helpers: signUp, confirmSignUp, signIn, signOut, getCurrentUser, etc.
    - Global AuthContext + custom `useAuth` hook
    - Sign-up, email verification, sign-in, and forgot password pages
