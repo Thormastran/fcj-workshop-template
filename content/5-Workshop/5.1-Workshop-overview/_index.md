@@ -1,7 +1,7 @@
 ---
 title: "Workshop Overview"
 date: "2025-12-05"
-weight: 1
+weight: 5
 chapter: false
 pre: "<b>5.1 </b>"
 ---
@@ -65,3 +65,11 @@ A complete Next.js 14 (App Router) application with:
 You are now exactly on the same path that AWS solutions architects, startups, and enterprises use daily in 2025.
 
 Next → **[Prerequisites](5.2-Prerequiste/)** (AWS account, Node.js, environment setup)
+
+1. **[Workshop Overview](5.1-Workshop-overview/)**
+   - What are Amazon Cognito and AWS Amplify?
+   - Why use them together?
+
+2. **[Prerequisites](5.2-Prerequiste/)**
+   - AWS account, IAM user, AWS CLI
+   - Node.js 18+, npm, VS Code
