@@ -1,5 +1,5 @@
 ---
-title: "5.5.2 Build Authentication UI"
+title: "Build Authentication UI"
 date: "2025-12-05"
 weight: 2
 chapter: false

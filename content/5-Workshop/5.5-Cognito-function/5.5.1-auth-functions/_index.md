@@ -1,5 +1,5 @@
 ---
-title: "5.5.1 Create Authentication Functions"
+title: "Create Authentication Functions"
 date: "2025-12-05"
 weight: 1
 chapter: false

@@ -1,5 +1,5 @@
 ---
-title: "5.6 Full Testing & Verification"
+title: "Full Testing & Verification"
 date: "2025-12-05"
 weight: 6
 chapter: false

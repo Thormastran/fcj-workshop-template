@@ -1,5 +1,5 @@
 ---
-title: "5.5.3 Implement Auth Context & Protected Routes"
+title: "Implement Auth Context & Protected Routes"
 date: "2025-12-05"
 weight: 3
 chapter: false
