@@ -1,5 +1,5 @@
 ---
-title : "Prepare the Environment"
+title : "Install Next.js Project"
 date : "`r Sys.Date()`"
 weight : 1
 chapter : false

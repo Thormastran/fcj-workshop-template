@@ -10,15 +10,14 @@ pre: " <b> 4.2. </b> "
 ⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
 {{% /notice %}}
 
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+# Summary Report: “AI/ML/GenAI on AWS”
 
 ### Event Objectives
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
-
+- Workshop overview and learning objectives
+- ​Ice-breaker activity
+- AM | AWS AI/ML Services Overview
+- Generative AI with Amazon Bedrock
 ### Speakers
 
 - **Jignesh Shah** – Director, Open Source Databases

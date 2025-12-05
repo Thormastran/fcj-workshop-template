@@ -26,7 +26,6 @@ And add the following code:
 import { Amplify } from 'aws-amplify';
 
 
-// Cấu hình Cognito – chỉ chạy 1 lần duy nhất
 
 
 export const amplifyConfig = {
@@ -57,7 +56,7 @@ NEXT_PUBLIC_COGNITO_USER_POOL_ID=us-east-1_xxxxxxxxx
 NEXT_PUBLIC_COGNITO_APP_CLIENT_ID=xxxxxxxxxxxxxxxxxxxx
 ``` 
 
-```
+
 This ensures Amplify is available across your entire application.
 
 

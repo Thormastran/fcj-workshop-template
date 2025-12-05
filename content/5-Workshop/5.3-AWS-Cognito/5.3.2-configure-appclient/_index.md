@@ -1,5 +1,5 @@
 ---
-title : "Test the Gateway Endpoint"
+title : "Configure App Client"
 date :  "`r Sys.Date()`" 
 weight : 2
 chapter : false

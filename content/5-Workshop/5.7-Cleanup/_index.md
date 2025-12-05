@@ -1,32 +1,75 @@
 ---
-title : "Clean up"
-date : "`r Sys.Date()`"
-weight : 6
-chapter : false
-pre : " <b> 5.6. </b> "
+title: "5.7 Clean Up Resources"
+date: "2025-12-05"
+weight: 7
+chapter: false
+pre: "<b>5.7 </b>"
 ---
-Congratulations on completing this workshop! 
-In this workshop, you learned architecture patterns for accessing Amazon S3 without using the Public Internet. 
-+ By creating a gateway endpoint, you enabled direct communication between EC2 resources and Amazon S3, without traversing an Internet Gateway. 
-+ By creating an interface endpoint you extended S3 connectivity to resources running in your on-premises data center via AWS Site-to-Site VPN or Direct Connect. 
 
-#### clean up
-1. Navigate to Hosted Zones on the left side of Route 53 console. Click the name of *s3.us-east-1.amazonaws.com* zone. Click Delete and confirm deletion by typing delete. 
+## 5.7 Clean Up Resources  
+**Delete everything to avoid any charges (even tiny ones)**
 
-![hosted zone](/images/5-Workshop/5.6-Cleanup/delete-zone.png)
+You’ve successfully completed the workshop — congratulations!  
+Now let’s make sure your AWS account stays **$0.00**.
 
-2. Disassociate the Route 53 Resolver Rule - myS3Rule from "VPC Onprem" and Delete it. 
+## Resources You Created (and Must Delete)
 
-![hosted zone](/images/5-Workshop/5.6-Cleanup/vpc.png)
+| Resource                  | Location                          | Cost if Left Running                     | Must Delete? |
+|---------------------------|-----------------------------------|------------------------------------------|--------------|
+| Cognito User Pool         | AWS Console → Amazon Cognito      | Free tier: 50,000 MAU → still $0         | Recommended  |
+| App Client (inside pool)  | Inside the User Pool              | No extra cost                            | Auto-deleted |
+| Cognito Groups (admin/user) | Inside the User Pool            | No cost                                  | Auto-deleted |
+| Test users (you signed up) | Inside the User Pool → Users      | No cost                                  | Optional     |
 
-4. Open the CloudFormation console  and delete the two CloudFormation Stacks that you created for this lab:
-+ PLOnpremSetup
-+ PLCloudSetup
+**Important:** Amazon Cognito User Pools are *free for up to 50,000 monthly active users*.  
+You will *never* be charged for this workshop — but it’s still best practice to clean up.
 
-![delete stack](/images/5-Workshop/5.6-Cleanup/delete-stack.png)
+## Step-by-Step Cleanup (Takes 60 Seconds)
 
-5. Delete S3 buckets
-+ Open S3 console
-+ Choose the bucket we created for the lab, click and confirm empty. Click delete and confirm delete.
+1.  Go to the AWS Console → **Amazon Cognito**  
+   → ⁦https://console.aws.amazon.com/cognito/home⁩
 
-![delete s3](/images/5-Workshop/5.6-Cleanup/delete-s3.png)
+2.  Select your region (the one you used, e.g., us-east-1)
+
+3.  You’ll see your User Pool (probably named something like my-cognito-app-pool or the default name)
+
+4.  Click on your User Pool → **Delete user pool** (top-right button)
+
+5.  Type delete in the confirmation box
+
+6.  Click **Delete user pool**
+
+**Done!** Everything is permanently deleted.
+
+## Optional: Also Delete Test Users (if you want a completely clean slate)
+
+•  Inside the User Pool → *Users* tab → select any test accounts → *Delete*
+
+You’re All Set!
+
+Your AWS account is now clean and back to *$0.00*.
+
+## Final Summary – What You’ve Accomplished
+
+You have built a **2025-standard, production-ready authentication system** using:
+
+•  Amazon Cognito (fully managed identity)
+•  AWS Amplify Gen 2 (v6+) – the correct, modern, SSR-safe way
+•  Next.js 14 App Router + React Server Components
+•  Role-based access control via Cognito Groups
+•  Protected routes & global auth context
+•  Beautiful, accessible UI with shadcn/ui + Tailwind
+
+This is **exactly** how professional teams at startups, enterprises, and AWS Partners build authentication today.
+
+**You now have a complete, deployable, real-world project** you can:
+•  Add to your portfolio
+•  Use as a starter template
+•  Deploy instantly to Vercel/Netlify
+•  Show in job interviews
+
+**You absolutely crushed this workshop.**
+
+Now go deploy it, share it, and be proud — you’ve earned it!
+
+**End of Workshop**

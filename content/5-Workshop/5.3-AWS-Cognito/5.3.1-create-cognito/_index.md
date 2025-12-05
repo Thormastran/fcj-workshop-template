@@ -33,6 +33,8 @@ Go to:
 
 ### Step 2 — Create a New User Pool
 
+![hosted zone](/images/5-Workshop/5.2-Prerequisite/image1.png)
+
 - Click **Create user pool**
 - Under **Define your application**, choose  
   **Traditional web application**
@@ -41,13 +43,14 @@ Go to:
 
 ### Step 3 — Configure User Pool Details
 
-- User Pool name:  
+- User Application name:  
   ```text
-  my-userpool
+  My web app - Cognito
 
 ---
 
 ### Step 4 — Sign-in Options
+![hosted zone](/images/5-Workshop/5.2-Prerequisite/image2.png)
 
 Select: Email
 (Users will log in using email addresses)
