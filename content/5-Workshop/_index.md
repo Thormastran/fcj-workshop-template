@@ -65,6 +65,6 @@ In this hands-on workshop, you will:
 **Estimated duration:** 3–4 hours  
 **Difficulty:** Intermediate (basic React/Next.js knowledge recommended)
 
-Let’s get started! → Click on **5.1 Workshop Overview** to begin.
+Let’s get started! → Click on 5.1 **[Workshop Overview](5.1-Workshop-overview/)** to begin.
 
 Happy authenticating!
