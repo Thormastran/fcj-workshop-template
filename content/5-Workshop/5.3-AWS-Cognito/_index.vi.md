@@ -1,18 +1,31 @@
 ---
-title : "Truy cập S3 từ VPC"
-date :  "`r Sys.Date()`" 
+title : "Thiết lập AWS Cognito"
+date : "`r Sys.Date()`"
 weight : 3
 chapter : false
 pre : " <b> 5.3. </b> "
 ---
 
-#### Sử dụng Gateway endpoint
+### Thiết lập AWS Cognito
 
-Trong phần này, bạn sẽ tạo một Gateway endpoint để truy cập Amazon S3 từ một EC2 instance. Gateway endpoint sẽ cho phép tải một object lên S3 bucket mà không cần sử dụng Internet Công cộng. Để tạo endpoint, bạn phải chỉ định VPC mà bạn muốn tạo endpoint và dịch vụ (trong trường hợp này là S3) mà bạn muốn thiết lập kết nối.
+Trong phần này, bạn sẽ thiết lập **Amazon Cognito User Pool** và cấu hình các cài đặt cần thiết như tùy chọn đăng nhập, chính sách mật khẩu và cài đặt app client.  
+Cấu hình này sẽ được sử dụng sau này trong dự án Next.js thông qua Amplify SDK.
+
+---
+
+### Sơ đồ tổng quan
 
 ![overview](/images/5-Workshop/5.3-S3-vpc/diagram2.png)
 
-#### Nội dung
+---
 
-- [Tạo gateway endpoint](3.1-create-gwe/)
-- [Test gateway endpoint](3.2-test-gwe/)
+### Nội dung
+
+1. [Tạo Cognito User Pool](5.3.1-create-cognito/)
+2. [Cấu hình App Client](5.3.2-configure-appclient/)
+
+---
+
+**Điều hướng:**
+- **Trước:** [5.2 Các bước chuẩn bị](../5.2-Prerequiste/) 
+- **Bước tiếp theo:** [5.3.1 Thiết lập dự án Next.js](../5.3.1-create-congito/) → Tạo Cognito

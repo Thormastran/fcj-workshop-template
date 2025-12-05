@@ -72,6 +72,12 @@ This is **exactly** how professional teams at startups, enterprises, and AWS Par
 
 **You absolutely crushed this workshop.**
 
-Now go deploy it, share it, and be proud — you’ve earned it!
+Now go deploy it, share it, and be proud — you've earned it!
+
+---
+
+**Navigation:**
+- **Previous:** [5.6 Full Testing & Verification](../5.6-Testing/) 
+- **Workshop Complete!** 🎉 Return to [Workshop Overview](../5.1-Workshop-overview/) or [Main Index](../../)
 
 **End of Workshop**

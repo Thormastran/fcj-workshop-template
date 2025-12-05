@@ -1,16 +1,16 @@
 ---
-title: "Use demo project for cognito authentication"
+title: "Sử dụng demo project cho cognito authentication"
 date: "2025-12-05"
 weight: 3
 chapter: false
 pre: "<b>5.5.4 </b>"
 ---
 
-## 5.5.4 Use demo project for cognito authentication
-**Global authentication state + automatic route protection**
+## 5.5.4 Sử dụng demo project cho cognito authentication
+**Trạng thái xác thực toàn cục + bảo vệ route tự động**
 
-I have sourecode contain the UI . So You’ve built the Cognito logic  
-Now you’ll connect everything with a **global `AuthContext`** and a **smart `ProtectedRoute`** — exactly as you designed.
+Tôi có source code chứa UI. Vậy bạn đã xây dựng logic Cognito  
+Bây giờ bạn sẽ kết nối mọi thứ với một **`AuthContext` toàn cục** và một **`ProtectedRoute` thông minh** — chính xác như bạn đã thiết kế.
 
 ### 1. Global Auth Context – `context/AuthContext.tsx`
 
@@ -111,22 +111,22 @@ export function ProtectedRoute({ children }: { children: React.ReactNode }) {
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <div className="text-xl font-medium">Loading...</div>
+        <div className="text-xl font-medium">Đang tải...</div>
       </div>
     );
   }
 
   if (!user) {
-    return null; // Redirecting...
+    return null; // Đang chuyển hướng...
   }
 
   return <>{children}</>;
 }
 ```
 
-when done all thing . i have to add protected to dashboard to block people dont login to access dashboard and protected page .
+khi hoàn tất tất cả mọi thứ. tôi phải thêm protected vào dashboard để chặn những người không đăng nhập truy cập dashboard và trang được bảo vệ.
 
-just add protected page like this 
+chỉ cần thêm protected page như thế này 
 
 ```tsx
 "use client"
@@ -160,23 +160,23 @@ export default function DashboardPage() {
               className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium bg-destructive/10 text-destructive hover:bg-destructive/20 transition-colors"
             >
               <LogOut className="w-4 h-4" />
-              Sign Out
+              Đăng xuất
             </button>
           </div>
         </header>
 
-        {/* Main Content */}
+        {/* Nội dung chính */}
         <main className="max-w-6xl mx-auto px-6 py-12">
-          {/* Welcome Section */}
+          {/* Phần chào mừng */}
           <div className="mb-12">
             <div className="space-y-2 mb-8">
-              <h2 className="text-4xl font-bold text-foreground">Welcome back</h2>
+              <h2 className="text-4xl font-bold text-foreground">Chào mừng trở lại</h2>
               <p className="text-lg text-muted-foreground">{user?.name || user?.email}</p>
             </div>
 
-            {/* Stats Cards */}
+            {/* Cards thống kê */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {/* Profile Status Card */}
+              {/* Card trạng thái Profile */}
               <div className="group relative overflow-hidden rounded-2xl bg-card border border-border/50 p-6 hover:shadow-lg transition-shadow duration-300">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                 <div className="relative space-y-4">
@@ -185,14 +185,14 @@ export default function DashboardPage() {
                   </div>
                   <div>
                     <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wide">
-                      Account Status
+                      Trạng thái tài khoản
                     </h3>
-                    <p className="text-2xl font-bold text-foreground mt-2">Active</p>
+                    <p className="text-2xl font-bold text-foreground mt-2">Hoạt động</p>
                   </div>
                 </div>
               </div>
 
-              {/* Role Card */}
+              {/* Card vai trò */}
               <div className="group relative overflow-hidden rounded-2xl bg-card border border-border/50 p-6 hover:shadow-lg transition-shadow duration-300">
                 <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                 <div className="relative space-y-4">
@@ -200,13 +200,13 @@ export default function DashboardPage() {
                     <User className="w-6 h-6 text-accent" />
                   </div>
                   <div>
-                    <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wide">User Role</h3>
-                    <p className="text-2xl font-bold text-foreground mt-2 capitalize">{user?.role || "Member"}</p>
+                    <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wide">Vai trò người dùng</h3>
+                    <p className="text-2xl font-bold text-foreground mt-2 capitalize">{user?.role || "Thành viên"}</p>
                   </div>
                 </div>
               </div>
 
-              {/* Verification Status */}
+              {/* Trạng thái xác minh */}
               <div className="group relative overflow-hidden rounded-2xl bg-card border border-border/50 p-6 hover:shadow-lg transition-shadow duration-300">
                 <div className="absolute inset-0 bg-gradient-to-br from-chart-1/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                 <div className="relative space-y-4">
@@ -215,18 +215,18 @@ export default function DashboardPage() {
                   </div>
                   <div>
                     <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wide">
-                      Email Status
+                      Trạng thái Email
                     </h3>
-                    <p className="text-2xl font-bold text-foreground mt-2">Verified</p>
+                    <p className="text-2xl font-bold text-foreground mt-2">Đã xác minh</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* User Information Section */}
+          {/* Phần thông tin người dùng */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            {/* Main User Card */}
+            {/* Card người dùng chính */}
             <div className="lg:col-span-2 rounded-2xl bg-card border border-border/50 overflow-hidden hover:shadow-lg transition-shadow duration-300">
               <div className="h-24 bg-gradient-to-r from-primary to-accent/50" />
               <div className="p-8 -mt-12 relative">
@@ -238,7 +238,7 @@ export default function DashboardPage() {
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold text-foreground">{user?.name || user?.email}</h3>
-                    <p className="text-muted-foreground mt-1">Authenticated User</p>
+                    <p className="text-muted-foreground mt-1">Người dùng đã xác thực</p>
                   </div>
                 </div>
 
@@ -246,7 +246,7 @@ export default function DashboardPage() {
                   <div className="flex items-start gap-4">
                     <Mail className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                     <div className="flex-1 min-w-0">
-                      <p className="text-sm text-muted-foreground">Email Address</p>
+                      <p className="text-sm text-muted-foreground">Địa chỉ Email</p>
                       <p className="text-foreground font-medium break-all">{user?.email}</p>
                     </div>
                   </div>
@@ -262,15 +262,15 @@ export default function DashboardPage() {
                   <div className="flex items-start gap-4">
                     <User className="w-5 h-5 text-chart-1 mt-1 flex-shrink-0" />
                     <div className="flex-1">
-                      <p className="text-sm text-muted-foreground">Account Role</p>
-                      <p className="text-foreground font-medium capitalize">{user?.role || "Member"}</p>
+                      <p className="text-sm text-muted-foreground">Vai trò tài khoản</p>
+                      <p className="text-foreground font-medium capitalize">{user?.role || "Thành viên"}</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Actions Sidebar */}
+            {/* Sidebar hành động */}
             <div className="space-y-4">
               <Link
                 href="/forgot-password"
@@ -278,7 +278,7 @@ export default function DashboardPage() {
               >
                 <div className="flex items-center gap-3">
                   <KeyRound className="w-5 h-5 text-primary" />
-                  <span className="font-medium text-foreground">Change Password</span>
+                  <span className="font-medium text-foreground">Đổi mật khẩu</span>
                 </div>
                 <ArrowRight className="w-4 h-4 text-muted-foreground group-hover:translate-x-1 transition-transform" />
               </Link>
@@ -289,7 +289,7 @@ export default function DashboardPage() {
               >
                 <div className="flex items-center gap-3">
                   <LogOut className="w-5 h-5 text-destructive" />
-                  <span className="font-medium text-destructive">Sign Out</span>
+                  <span className="font-medium text-destructive">Đăng xuất</span>
                 </div>
                 <ArrowRight className="w-4 h-4 text-destructive/50 group-hover:translate-x-1 transition-transform" />
               </button>
@@ -304,10 +304,10 @@ export default function DashboardPage() {
 
 
 
-Congratulations! You've built a 2025-standard, AWS-native authentication flow that top-tier teams use daily.
+Chúc mừng! Bạn đã xây dựng một luồng xác thực chuẩn AWS native 2025 mà các đội ngũ hàng đầu sử dụng hàng ngày.
 
 ---
 
-**Navigation:**
-- **Previous:** [5.5.3 Implement Protected Routes](../5.5.3-protected-routes/)
-- **Next Step:** [5.6 Testing & Verification](../../5.6-Testing/) → Run and verify the complete authentication system
+**Điều hướng:**
+- **Trước:** [5.5.3 Triển khai Protected Routes](../5.5.3-protected-routes/)
+- **Bước tiếp theo:** [5.6 Testing & Verification](../../5.6-Testing/) → Chạy và xác minh hệ thống xác thực hoàn chỉnh

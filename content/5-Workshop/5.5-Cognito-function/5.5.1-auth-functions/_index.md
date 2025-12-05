@@ -211,6 +211,8 @@ export async function cognitoConfirmResetPassword(email: string, code: string, n
 ```
 
 
-Next →  [Build Authentication UI](5.5.2-auth-ui/)
-Now you’ll use these functions to build beautiful sign-up, sign-in, and dashboard pages!
-text
+---
+
+**Navigation:**
+- **Previous:** [5.5 Cognito Functions Overview](../)
+- **Next Step:** [5.5.2 Build Authentication UI](../5.5.2-auth-ui/) → Create sign-up, sign-in, and dashboard pages

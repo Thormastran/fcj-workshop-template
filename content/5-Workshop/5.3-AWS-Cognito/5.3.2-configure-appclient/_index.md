@@ -23,7 +23,11 @@ Example output: h1a234example123
 you give userpood id to line, then enter 
 you will create AppClient that do no generate secret
 
+---
 
+**Navigation:**
+- **Previous:** [5.3.1 Create Cognito User Pool](../5.3.1-create-cognito/) 
+- **Next Step:** [5.4 Next.js Project Setup](../../5.4-Next.js-setup/) → Set up Next.js and Amplify SDK
 
 
 

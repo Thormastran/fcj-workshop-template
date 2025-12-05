@@ -124,7 +124,10 @@ export function ProtectedRoute({ children }: { children: React.ReactNode }) {
 }
 ```
 
-Congratulations! You’ve built a 2025-standard, AWS-native authentication flow that top-tier teams use daily.
-Next → **[Full Testing & Verification](5.6-Testing/)**
-Time to run it and admire your work!
-Drop this file in — it’s 100% your code, perfectly polished and ready for the workshop.
+Congratulations! You've built a 2025-standard, AWS-native authentication flow that top-tier teams use daily.
+
+---
+
+**Navigation:**
+- **Previous:** [5.5.2 Build Authentication UI](../5.5.2-auth-ui/)
+- **Next Step:** [5.5.4 Project Demo](../5.5.4-use-project-demo/) → Run and test the complete authentication system

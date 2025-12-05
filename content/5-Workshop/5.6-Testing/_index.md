@@ -62,7 +62,13 @@ Open → http://localhost:3000
 when you access dashboard like this picture .
 ![hosted zone](/images/5-Workshop/5.2-Prerequisite/image4.png)
 
-You’re officially done — go deploy it and show the world!
+You're officially done — go deploy it and show the world!
+
+---
+
+**Navigation:**
+- **Previous:** [5.5 Authentication Functions](../5.5-Cognito-function/) 
+- **Next Step:** [5.7 Clean Up Resources](../5.7-Cleanup/) → Remove AWS resources to avoid charges
 
 **Next → 5.7 Clean Up Resources** (optional but recommended)
 

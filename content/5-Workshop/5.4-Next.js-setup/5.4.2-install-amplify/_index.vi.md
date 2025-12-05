@@ -1,43 +1,83 @@
 ---
-title : "Tạo một S3 Interface endpoint"
+title : "Cài đặt Amplify SDK và Cấu hình Amplify"
 date : "`r Sys.Date()`"
 weight : 2
 chapter : false
 pre : " <b> 5.4.2 </b> "
 ---
 
-Trong phần này, bạn sẽ tạo và kiểm tra Interface Endpoint  S3 bằng cách sử dụng môi trường truyền thống mô phỏng.
+### Cài đặt Amplify SDK
 
-1. Quay lại Amazon VPC menu. Trong thanh điều hướng bên trái, chọn Endpoints, sau đó click Create Endpoint.
+Sau khi chuẩn bị dự án Next.js, cài đặt các package Amplify cần thiết:
 
-2. Trong Create endpoint console:
-+ Đặt tên interface endpoint
-+ Trong Service category, chọn **aws services** 
+```bash
+npm install aws-amplify @aws-amplify/ui-react
+```
+### 2. Tạo file cấu hình Amplify
 
-![name](/images/5-Workshop/5.4-S3-onprem/s3-interface-endpoint1.png)
+Tạo file mới:
 
-3.  Trong Search box, gõ S3 và nhấn Enter. Chọn endpoint có tên com.amazonaws.us-east-1.s3. Đảm bảo rằng cột Type có giá trị Interface.
+src/lib/amplify-config.ts
 
-![service](/images/5-Workshop/5.4-S3-onprem/s3-interface-endpoint2.png)
 
-4. Đối với VPC, chọn VPC Cloud từ drop-down.
-{{% notice warning %}}
-Đảm bảo rằng bạn chọn "VPC Cloud" và không phải "VPC On-prem"
-{{% /notice %}}
-+ Mở rộng **Additional settings** và đảm bảo rằng Enable DNS name *không* được chọn (sẽ sử dụng điều này trong phần tiếp theo của workshop)
+Và thêm code sau:
 
-![vpc](/images/5-Workshop/5.4-S3-onprem/s3-interface-endpoint3.png)
+```tsx
+import { Amplify } from 'aws-amplify';
 
-5. Chọn 2 subnets trong AZs sau: us-east-1a and us-east-1b
 
-![subnets](/images/5-Workshop/5.4-S3-onprem/s3-interface-endpoint4.png)
 
-6. Đối với Security group, chọn SGforS3Endpoint:
 
-![sg](/images/5-Workshop/5.4-S3-onprem/s3-interface-endpoint5.png)
+export const amplifyConfig = {
+    Auth: {
+        Cognito: {
+            userPoolId: process.env.NEXT_PUBLIC_COGNITO_USER_POOL_ID!,
+            userPoolClientId: process.env.NEXT_PUBLIC_COGNITO_APP_CLIENT_ID!,
+            loginWith: {
+                username: false,
+                email: true,
+            },
+        },
+    },
+};
 
-7. Giữ default policy - full access và click Create endpoint
 
-![success](/images/5-Workshop/5.4-S3-onprem/s3-interface-endpoint-success.png)
+// Cấu hình Amplify với hỗ trợ SSR
+Amplify.configure(amplifyConfig, {
+    ssr: true, // Quan trọng cho Next.js
+});
+```
+### 3. Thêm Environment Variables
 
-Chúc mừng bạn đã tạo thành công S3 interface endpoint. Ở bước tiếp theo, chúng ta sẽ kiểm tra interface endpoint.
+Tạo file .env.local và dán Cognito IDs của bạn:
+
+```bash
+NEXT_PUBLIC_COGNITO_USER_POOL_ID=us-east-1_xxxxxxxxx
+NEXT_PUBLIC_COGNITO_APP_CLIENT_ID=xxxxxxxxxxxxxxxxxxxx
+``` 
+---
+
+Điều này đảm bảo Amplify có sẵn trong toàn bộ ứng dụng của bạn.
+
+
+
+Amplify giờ đây đã được cấu hình và sẵn sàng được sử dụng cho:
+
+Đăng ký
+
+Đăng nhập
+
+Đăng xuất
+
+Quản lý phiên
+
+Protected routes
+
+Tiếp theo, bạn sẽ xây dựng UI cho xác thực.
+
+
+---
+
+**Điều hướng:**
+- **Trước:** [5.4.1 Cài đặt Next.js](../5.4.1-install-nextjs/) 
+- **Bước tiếp theo:** [5.5 Cognito Functions](../../5.5-Cognito-function/) → Xây dựng auth functions, UI, và protected routes

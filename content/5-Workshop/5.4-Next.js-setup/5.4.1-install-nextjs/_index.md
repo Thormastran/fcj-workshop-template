@@ -38,4 +38,10 @@ npx shadcn@latest init
 
 This will set up the component generator for your project.
 
-Your environment is now ready for the next steps, where you will install Amplify SDK and configure the AWS Cognito integration.Next to [Install Amplify SDK](4.2-install-amplify/)
+Your environment is now ready for the next steps, where you will install Amplify SDK and configure the AWS Cognito integration.
+
+---
+
+**Navigation:**
+- **Previous:** [5.4 Next.js Project Setup](../) 
+- **Next Step:** [5.4.2 Install Amplify SDK](../5.4.2-install-amplify/) → Install and configure Amplify SDK

@@ -52,3 +52,10 @@ Your local machine should be set up for building and running a Next.js + Amplify
 node --version   # Should be v18.x or higher
 npm --version    # Should be v9.x or higher
 git --version    # Should show a valid version
+```
+
+---
+
+**Navigation:**
+- **Previous:** [5.1 Workshop Overview](../5.1-Workshop-overview/) 
+- **Next Step:** [5.3 AWS Cognito Setup](../5.3-AWS-Cognito/) → Create and configure Cognito User Pool

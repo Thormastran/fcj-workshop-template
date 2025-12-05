@@ -16,6 +16,11 @@ You will prepare the base environment that will be used later to build authentic
 
 ### Content
 
-1. [Install Next.js Project](4.1-install-nextjs/)
-2. [Install Amplify SDK](4.2-install-amplify/)
-3. [Configure Amplify with Cognito](4.3-configure-amplify/)
+1. [Install Next.js Project](5.4.1-install-nextjs/)
+2. [Install Amplify SDK and Configure](5.4.2-install-amplify/)
+
+---
+
+**Navigation:**
+- **Previous:** [5.3 AWS Cognito Setup](../5.3-AWS-Cognito/) 
+- **Next Step:** [5.5 Authentication Functions](../5.5-Cognito-function/) → Build auth functions, UI, and protected routes

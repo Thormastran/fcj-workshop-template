@@ -64,5 +64,7 @@ A complete Next.js 14 (App Router) application with:
 
 You are now exactly on the same path that AWS solutions architects, startups, and enterprises use daily in 2025.
 
-Next → **[Prerequisites](5.2-Prerequiste/)** (AWS account, Node.js, environment setup)
+---
+
+**Next Step:** [5.2 Prerequisites](../5.2-Prerequiste/) → Set up your AWS account, Node.js, and development environment
 

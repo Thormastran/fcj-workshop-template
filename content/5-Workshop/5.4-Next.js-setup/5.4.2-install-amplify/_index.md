@@ -74,3 +74,10 @@ Session management
 Protected routes
 
 Next, you will build the UI for authentication.
+
+
+---
+
+**Navigation:**
+- **Previous:** [5.4.1 Install Next.js](../5.4.1-install-nextjs/) 
+- **Next Step:** [5.5 Cognito Functions](../../5.5-Cognito-function/) → Build auth functions, UI, and protected routes

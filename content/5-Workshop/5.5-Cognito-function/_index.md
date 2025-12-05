@@ -39,11 +39,20 @@ By the end of this section, your application will support:
 >
 > You can either use the live demo for a fast setup or follow the step‑by‑step guides below to edit functions and UI directly.
 >
-> - [Create Cognito Authentication Functions](5.5.1-auth-functions/)
-> - [Build Authentication UI](5.5.2-auth-ui/)
+> > You can either use the live demo for a fast setup or follow the step‑by‑step guides below:
 >
-> Use the demo for a quick start with link <https://github.com/Thormastran/my-cognito-project/>; 
-**[Implement Auth Context & Protected Routes](5.5.3-protected-routes/)**
+> 1. [Create Cognito Authentication Functions](5.5.1-auth-functions/)
+> 2. [Build Authentication UI](5.5.2-auth-ui/)
+> 3. [Implement Auth Context & Protected Routes](5.5.3-protected-routes/)
+> 4. [Use Project Demo (Quick Start)](5.5.4-use-project-demo/)
+>
+> **Quick Start Demo:** <https://github.com/Thormastran/my-cognito-project/>
+
+---
+
+**Navigation:**
+- **Previous:** [5.4 Next.js Project Setup](../5.4-Next.js-setup/) 
+- **Next Step:** [5.6 Full Testing & Verification](../5.6-Testing/) → Test all authentication features
 follow the guides for detailed customization and explanation.
 
 ### Content

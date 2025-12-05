@@ -148,6 +148,8 @@ You now have a fully configured Cognito User Pool created via:
 
 - AWS CLI
 
-You can continue to the next section:
+---
 
-➡️  [Configure App Client](3.2-configure-appclient/)
+**Navigation:**
+- **Previous:** [5.3 AWS Cognito Setup](../) 
+- **Next Step:** [5.3.2 Configure App Client](../5.3.2-configure-appclient/) → Configure application client settings
