@@ -1,5 +1,5 @@
 ---
-title: "5.7 Clean Up Resources"
+title: "Clean Up Resources"
 date: "2025-12-05"
 weight: 7
 chapter: false
