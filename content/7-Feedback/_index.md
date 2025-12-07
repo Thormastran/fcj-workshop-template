@@ -14,32 +14,43 @@ pre: " <b> 7. </b> "
 
 ### Overall Evaluation
 
-**1. Working Environment**  
-The working environment is very friendly and open. FCJ members are always willing to help whenever I encounter difficulties, even outside working hours. The workspace is tidy and comfortable, helping me focus better. However, I think it would be nice to have more social gatherings or team bonding activities to strengthen relationships.
+---
+**1. Working Environment**
 
-**2. Support from Mentor / Team Admin**  
-The mentor provides very detailed guidance, explains clearly when I don’t understand, and always encourages me to ask questions. The admin team supports administrative tasks, provides necessary documents, and creates favorable conditions for me to work effectively. I especially appreciate that the mentor allows me to try and solve problems myself instead of just giving the answer.
-
-**3. Relevance of Work to Academic Major**  
-The tasks I was assigned align well with the knowledge I learned at university, while also introducing me to new areas I had never encountered before. This allowed me to both strengthen my foundational knowledge and gain practical skills.
-
-**4. Learning & Skill Development Opportunities**  
-During the internship, I learned many new skills such as using project management tools, teamwork skills, and professional communication in a corporate environment. The mentor also shared valuable real-world experiences that helped me better plan my career path.
-
-**5. Company Culture & Team Spirit**  
-The company culture is very positive: everyone respects each other, works seriously but still keeps things enjoyable. When there are urgent projects, everyone works together and supports one another regardless of their position. This made me feel like a real part of the team, even as an intern.
-
-**6. Internship Policies / Benefits**  
-The company provides an internship allowance and offers flexible working hours when needed. In addition, having the opportunity to join internal training sessions is a big plus.
+The working environment is warm and welcoming. Everyone at FCJ is approachable and willing to assist whenever I run into difficulties — even beyond regular working hours. The office setup is clean, organized, and comfortable, which helps me stay focused. One thing that could be improved is increasing team-building or social activities to help members connect more.
 
 ---
+**2. Support from Mentor / Team Admin**
 
-### Additional Questions
-- What did you find **most satisfying** during your internship?  
-- What do you think the company **should improve** for future interns?  
-- If recommending to a friend, would you **suggest they intern here**? Why or why not?  
+My mentor gave very clear, thorough explanations and always encouraged me to ask questions whenever I got stuck. The admin team handled paperwork efficiently, shared all the materials I needed, and ensured I had a smooth working experience. What I appreciate the most is that my mentor encourages independent problem-solving instead of giving direct answers right away.
 
 ---
+**3. Relevance of Work to Academic Major**
+
+My assigned tasks were closely related to what I studied at school, yet still introduced new topics I hadn’t explored before. This helped reinforce what I already knew while expanding my understanding through practical experience.
+
+---
+**4. Learning & Skill Development Opportunities**
+
+Throughout the internship, I had the chance to pick up valuable skills such as using project management tools, collaborating in a team, and communicating professionally in a workplace setting. My mentor also shared practical insights that helped me think more clearly about my future career path.
+
+---
+**5. Company Culture & Team Spirit**
+
+The workplace culture is very positive: everyone treats each other respectfully and maintains a balance between professionalism and a friendly atmosphere. During tight deadlines, the team collaborates closely and supports one another without considering job titles. This made me feel truly included, even as an intern.
+
+---
+**6. Internship Policies / Benefits**
+
+The internship provides a monthly allowance and allows flexible working hours when necessary. Additionally, being able to participate in internal training sessions is a major advantage.
+
+Additional Questions
+
+What was the most fulfilling part of your internship experience?
+
+Which aspects do you think the company could improve for future interns?
+
+If a friend asked, would you recommend this place for an internship? Why or why not?
 
 ### Suggestions & Expectations
 - Do you have any suggestions to improve the internship experience?  
