@@ -60,3 +60,11 @@ During my internship, I participated in two events. Each one was a memorable exp
 &emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City  
 
 &emsp;**Role:** Attendee  
+
+### [Event 5](4.5-Event5/)  
+&emsp;**Event Name:** AWS Cloud Update Q4 – 2025
+
+&emsp;**Date & Time:** 10:00, November 6, 2025  
+
+&emsp;**Location:** online on Teams
+&emsp;**Role:** Attendee  
