@@ -21,7 +21,7 @@ pre: " <b> 1.12. </b> "
 | 2   | - Set up Cognito AWS + amplify SDK + S3                                                                                                     | 11/24/2025 | 11/24/2025      |
 | 3   | - DEPLOY APPLICATION USING BEANSTALK <br>&emsp; + Application: <br>&emsp; + Application Environments <br>&emsp; + Isolated <br>&emsp; + Scalability <br>&emsp; + Elastic Load Balancing <br>                                              | 11/25/2025 | 11/25/2025     | <https://000112.awsstudygroup.com/1-introduce/> |
 | 4   | - DEPLOY WEB APP WITH ELASTIC BEANSTALK AND CDK PIPELINES <br> - BUILD WEB APPLICATION <br> - **Practice:** <br>&emsp; + CREATE INSFRATRUCTURE USING CDK <br>&emsp; + ADD THE ELASTIC BEANSTALK CDK <br> &emsp; + CREATE CICD PIPELINE STACK | 11/26/2025 | 11/26/2025       | <https://000113.awsstudygroup.com/1-introduction/> |
-| 5   | - AWS CLOUDFRONT WORKSHOP                          | 11/27/2025 | 08/17/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - AWS CLOUDFRONT WORKSHOP                          | 11/27/2025 | 11/17/2025      | <https://cloudjourney.awsstudygroup.com/> |
 | 6   | - SERVERLESS - CI/CD WITH CODEPIPELINE                                                                                   | 11/28/2025  | 11/28/2025      | <https://000140.awsstudygroup.com/1-introduction/> |
 
 

@@ -10,8 +10,8 @@ pre: " <b> 6. </b> "
 ⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
 {{% /notice %}}
 
-During my internship at **[Company/Organization Name]** from **[start date]** to **[end date]**, I had the opportunity to learn, practice, and apply the knowledge acquired in school to a real-world working environment.  
-I participated in **[briefly describe the main project or task]**, through which I improved my skills in **[list skills: programming, analysis, reporting, communication, etc.]**.  
+During my internship at **[AWS]** from **[09/08/2025]** to **[12/08/2025]**, I had the opportunity to learn, practice, and apply the knowledge acquired in school to a real-world working environment.  
+I participated in **[AWS company]**, through which I improved my skills in **[list skills: programming, analysis, reporting, communication, code, AWS service]**.  
 
 In terms of work ethic, I always strived to complete tasks well, complied with workplace regulations, and actively engaged with colleagues to improve work efficiency.
 

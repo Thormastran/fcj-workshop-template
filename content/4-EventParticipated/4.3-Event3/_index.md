@@ -1,5 +1,5 @@
 ---
-title: "Event3"
+title: "Event 3"
 date: "`r Sys.Date()`"
 weight: 2
 chapter: false
