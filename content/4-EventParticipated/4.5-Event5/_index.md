@@ -1,7 +1,7 @@
 ---
 title: "Event 5"
 date: "`r Sys.Date()`"
-weight: 2
+weight: 5
 chapter: false
 pre: "<b>4.5.</b>"
 ---
