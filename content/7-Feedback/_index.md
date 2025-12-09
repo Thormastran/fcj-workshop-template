@@ -15,10 +15,6 @@ pre: " <b> 7. </b> "
 ### Overall Evaluation
 
 ---
-
-### Overall Evaluation
-
----
 **1. Working Environment**
 
 The workplace at FCJ is friendly and supportive. Colleagues are always ready to help, even outside normal working hours, which creates a great sense of teamwork. The office is tidy, well-organized, and comfortable, making it easy to stay productive. A small suggestion would be to organize more team-building or social events to help everyone bond even better.
