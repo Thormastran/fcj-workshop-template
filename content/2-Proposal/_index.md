@@ -6,6 +6,8 @@ chapter: false
 pre: " <b> 2. </b> "
 ---
 
+[Document version of the proposal](https://docs.google.com/document/d/1-WtW93MMZPBzKaP8AzaQ2Zy3GQCm-i-ZW2sAS80ZsUg/edit?usp=sharing)
+
 # Rafilm: AI-Powered Movie Logging & Recommendation Platform
 
 ## A Serverless AWS Solution for Intelligent Movie Discovery
@@ -91,23 +93,20 @@ Rafilm employs a modular serverless architecture using AWS services for scalabil
 
 ### 6. Budget Estimation
 
-**Estimated Monthly Cost:**
+**Estimated Monthly Cost:** $40.09 USD ($481.08 for 12 months)
 
-_To be updated_
+The cost estimate of this project is projected in this link: [https://calculator.aws/#/estimate?id=dab7fb57dabfb76041cdba98ac2bac7ba9630046](https://calculator.aws/#/estimate?id=dab7fb57dabfb76041cdba98ac2bac7ba9630046)
 
-<!-- | Service | Usage | Monthly Cost |
-|----------|--------|--------------|
-| AWS Lambda | 100K requests | $0.00 |
-| API Gateway | 5K API calls | $0.05 |
-| DynamoDB | 25K reads/writes | $0.20 |
-| S3 | 1 GB storage | $0.02 |
-| Amplify Hosting | 500 MB | $0.35 |
-| Cognito | 50 users | $0.00 |
-| SQS | 10K messages | $0.01 |
-| Personalize | 1 model training + inference | $0.05 |
-| Bedrock | 500 chatbot requests | $0.05 | -->
+The monthly cost estimate of **$40.09 USD** is calculated based on the following specific usage assumptions derived from the AWS Pricing Calculator:
 
-<!-- **Total Estimated Cost:** ≈ **$0.7/month** (≈ **$8.40/year**)   -->
+- **Standard Usage:** Assumes **10,000 requests per month** for both **AWS Lambda** and **Amazon API Gateway**.
+- **User Base:** Assumes a maximum of **10,000 Monthly Active Users (MAU)** for **Amazon Cognito**.
+- **AI/ML Usage (Primary Cost Driver):**
+    - **Amazon Bedrock** is estimated for continuous operation (24 hours per day) with an average of **1 request per minute** and **100 input/output tokens per request**.
+    - **Amazon Personalize** includes **1 GB of data ingested** and **15 training hours per month**.
+- **Security Overhead:** Assumes use of **1 AWS WAF Web ACL** with 4 Rules and 3 Managed Rule Groups.
+- **Data Storage:** Assumes **0.5 GB** of data storage in **Amazon DynamoDB**.
+
 
 ### 7. Risk Assessment
 

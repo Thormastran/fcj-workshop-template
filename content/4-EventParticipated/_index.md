@@ -68,3 +68,11 @@ During my internship, I participated in two events. Each one was a memorable exp
 
 &emsp;**Location:** online on Teams
 &emsp;**Role:** Attendee  
+
+### [Event 6](4.6-Event6/)  
+&emsp;**Event Name:** AI, Data Interview ( Nguyễn Gia Hưng (Head of SA, AWS))
+
+&emsp;**Date & Time:** 10:00, October 17, 2025  
+
+&emsp;**Location:** online on Youtube
+&emsp;**Role:** Attendee  
