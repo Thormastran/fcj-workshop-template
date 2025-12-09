@@ -1,7 +1,7 @@
 ---
 title: "Sự kiện 3"
 date: "`r Sys.Date()`"
-weight: 2
+weight: 3
 chapter: false
 pre: "<b>4.3.</b>"
 ---
